@@ -1,0 +1,31 @@
+<style>
+	.selected {
+		background-color: lightblue;
+	}
+</style>
+
+<div class = a-main>Tuile 1</div>
+<div class = a-main>Tuile 2</div>
+<div class = a-main>Tuile 3</div>
+<div id = pioche-main>Tuile 4</div>
+<div id = a-centre>Tuile 5</div>
+
+<script>
+	var tuilesMain = document.getElementsByClassName("a-main");
+	var piocheMain = document.getElementById("pioche-main");
+	var aCentre  = document.getElementById("a-centre");
+
+	tuilesArray = Array.from(tuilesMain);
+	tuilesArray.push(piocheMain, aCentre);
+	
+	tuilesArray.forEach(
+		(tuile) => {
+			tuile.addEventListener(
+				"click",
+				() => {
+					tuile.classList.toggle("selected");
+				}
+			);
+		}
+	);
+</script>
