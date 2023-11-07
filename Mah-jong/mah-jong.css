@@ -25,7 +25,7 @@ a:hover {
 
 body {
 	text-align: center;
-	background: #008000;
+	background-color: #008000;
 	color: #ffffff;
 	text-shadow: 2px 2px 1px #000000;
 	font-size: 150%;
@@ -63,13 +63,14 @@ th {
 
 
 svg {
-	width: 250px;
-	height: 250px;
+	width: 300px;
+	height: 300px;
 }
 circle, polygon {
 	fill: #0027b4;
 	stroke: #ffffff;
 	stroke-width: 2px;
+	filter: drop-shadow(2px 2px 1px #000000);
 }
 text {
 	text-anchor: middle;
@@ -116,16 +117,25 @@ button {
 	text-shadow: 2px 2px 1px #000000;
 }
 button:hover {
-	background-color: #3352C3;
+	background-color: #3352c3;
 	cursor: pointer;
 	margin-left: 5%;
 }
 button:active {
-	background-color: #667DD2;
+	background-color: #667dd2;
 }
 
-.selectionne {
+.selectionnee {
 	background-color: #ffff00;
+}
+
+#murs {
+	background: url("rdv.png") no-repeat center #008000;
+	background-size: 50%;
+}
+
+alert #overlay {
+	background-color: blue;
 }
 
 /*===================================================================================================================*/
