@@ -1,106 +1,105 @@
-<!-- ==================================================================================================== -->
-<!--                                                                                                      -->
-<!--                                                Échecs                                                -->
-<!--                                                                                                      -->
-<!-- ==================================================================================================== -->
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                     Échecs                                                     -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->
+
 
 <!DOCTYPE html>
 <html lang = fr-fr>
 <head>
-	<title>Échecs</title>
+	<meta charset = utf-8>
 	<link rel = stylesheet href = echecs.css>
+	<script src = echecs.js></script>
+	<title>Échecs</title>
 </head>
-<body>
-	<div class = plateau>
-		<div class = ligne>
-			<div class = "case blanche" data-piece = ♖>♖</div>
-			<div class = "case noire" data-piece = ♘>♘</div>
-			<div class = "case blanche" data-piece = ♗>♗</div>
-			<div class = "case noire" data-piece = ♕>♕</div>
-			<div class = "case blanche" data-piece = ♔>♔</div>
-			<div class = "case noire" data-piece = ♗>♗</div>
-			<div class = "case blanche" data-piece = ♘>♘</div>
-			<div class = "case noire" data-piece = ♖>♖</div>
-		</div>
-		<div class = ligne>
-			<div class = "case noire" data-piece = ♙>♙</div>
-			<div class = "case blanche" data-piece = ♙>♙</div>
-			<div class = "case noire" data-piece = ♙>♙</div>
-			<div class = "case blanche" data-piece = ♙>♙</div>
-			<div class = "case noire" data-piece = ♙>♙</div>
-			<div class = "case blanche" data-piece = ♙>♙</div>
-			<div class = "case noire" data-piece = ♙>♙</div>
-			<div class = "case blanche" data-piece = ♙>♙</div>
-		</div>
-		<div class = ligne>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-		</div>
-		<div class = ligne>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-		</div>
-		<div class = ligne>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-		</div>
-		<div class = ligne>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-			<div class = "case noire"> </div>
-			<div class = "case blanche"> </div>
-		</div>
-		<div class = ligne>
-			<div class = "case blanche" data-piece = ♟>♟</div>
-			<div class = "case noire" data-piece = ♟>♟</div>
-			<div class = "case blanche" data-piece = ♟>♟</div>
-			<div class = "case noire" data-piece = ♟>♟</div>
-			<div class = "case blanche" data-piece = ♟>♟</div>
-			<div class = "case noire" data-piece = ♟>♟</div>
-			<div class = "case blanche" data-piece = ♟>♟</div>
-			<div class = "case noire" data-piece = ♟>♟</div>
-		</div>
-		<div class = ligne>
-			<div class = "case noire" data-piece = ♜>♜</div>
-			<div class = "case blanche" data-piece = ♞>♞</div>
-			<div class = "case noire" data-piece = ♝>♝</div>
-			<div class = "case blanche" data-piece = ♛>♛</div>
-			<div class = "case noire" data-piece = ♚>♚</div>
-			<div class = "case blanche" data-piece = ♝>♝</div>
-			<div class = "case noire" data-piece = ♞>♞</div>
-			<div class = "case blanche" data-piece = ♜>♜</div>
-		</div>
-	</div>
 
-	<script>
-	</script>
-</body>
-</html>
+<table>
+	<tr>
+		<td class = blanc>♖</td>
+		<td class = noir>♘</td>
+		<td class = blanc>♗</td>
+		<td class = noir>♕</td>
+		<td class = blanc>♔</td>
+		<td class = noir>♗</td>
+		<td class = blanc>♘</td>
+		<td class = noir>♖</td>
+	</tr>
+	<tr>
+		<td class = noir>♙</td>
+		<td class = blanc>♙</td>
+		<td class = noir>♙</td>
+		<td class = blanc>♙</td>
+		<td class = noir>♙</td>
+		<td class = blanc>♙</td>
+		<td class = noir>♙</td>
+		<td class = blanc>♙</td>
+	</tr>
+	<tr>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+	</tr>
+	<tr>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+	</tr>
+	<tr>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+	</tr>
+	<tr>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+		<td class = noir> </td>
+		<td class = blanc> </td>
+	</tr>
+	<tr>
+		<td class = blanc>♟</td>
+		<td class = noir>♟</td>
+		<td class = blanc>♟</td>
+		<td class = noir>♟</td>
+		<td class = blanc>♟</td>
+		<td class = noir>♟</td>
+		<td class = blanc>♟</td>
+		<td class = noir>♟</td>
+	</tr>
+	<tr>
+		<td class = noir>♜</td>
+		<td class = blanc>♞</td>
+		<td class = noir>♝</td>
+		<td class = blanc>♛</td>
+		<td class = noir>♚</td>
+		<td class = blanc>♝</td>
+		<td class = noir>♞</td>
+		<td class = blanc>♜</td>
+	</tr>
+</table>
 
-<!-- ==================================================================================================== -->
-<!--                                                                                                      -->
-<!--                                                Échecs                                                -->
-<!--                                                                                                      -->
-<!-- ==================================================================================================== -->
+
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                     Échecs                                                     -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->

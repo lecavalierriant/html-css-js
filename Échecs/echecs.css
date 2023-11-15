@@ -4,37 +4,29 @@
 /*                                                                                                                   */
 /*===================================================================================================================*/
 
+
 body {
-	text-align: center;
-	font-size: 300%;
+	font-size: 275%;
 	background-color: #008000;
 }
 
-.plateau {
-	display: inline-block;
-	border: 5px solid black;
-	width: 45%;
+table {
+	width: 30%;
+	margin: auto;
 }
 
-.ligne {display: flex;}
-
-.case {
-	width: 150%;
-	aspect-ratio: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+tr {
 	cursor: pointer;
-	border: 2px inset #888888;
 }
 
-.blanche {
+.blanc {
 	background-color: #ffffff;
 }
 
-.noire {
+.noir {
 	background-color: #000000;
 }
+
 
 /*===================================================================================================================*/
 /*                                                                                                                   */

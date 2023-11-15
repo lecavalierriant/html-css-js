@@ -1,0 +1,1007 @@
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                   Mah-jong                                                     -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->
+
+
+<!DOCTYPE html>
+<html lang = fr>
+<head>
+	<meta charset = utf-8>
+	<script src = mah-jong.js></script>
+	<link rel = stylesheet href = mah-jong.css>
+	<title>Vent d'Est — Mah-jong</title>
+</head>
+
+<br>
+
+<table id = plateau>
+	<tr>
+		<td>
+			<table>
+				<tr><td><button ondblclick = joueurSuivant()>Joueur<br>suivant</button></td></tr>
+			</table>
+		</td>
+		<td>
+			<table id = murs>
+				<tr>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+				</tr>
+				<tr>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile id = haut-droite>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td colspan = 17></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td colspan = 17></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td colspan = 2 rowspan = 13></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td colspan = 2 rowspan = 13></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-centre></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td colspan = 17></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr class = vertical>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td colspan = 17></td>
+					<td class = td-mur>
+						<div class = pile>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr>
+					<td class = encadrement></td>
+					<td class = td-mur>
+						<div class = pile id = bas-gauche>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<div class = tresHaut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<a class = a-tuiles-remplacement>🀫</a>
+						</div>
+					</td>
+
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<div class = tresHaut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<a class = a-tuiles-remplacement>🀫</a>
+						</div>
+					</td>
+
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<div class = tresHaut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<a class = a-tuiles-remplacement>🀫</a>
+						</div>
+					</td>
+
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<div class = tresHaut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<a class = a-tuiles-remplacement>🀫</a>
+						</div>
+					</td>
+
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<div class = tresHaut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<a class = a-tuiles-remplacement>🀫</a>
+						</div>
+					</td>
+
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<div class = tresHaut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<a class = a-tuiles-remplacement>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<div class = tresHaut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<div class = tresHaut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<div class = tresHaut>
+								<a class = a-tuiles-remplacement>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = td-mur>
+						<div class = pile>
+							<div class = haut>
+								<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+							</div>
+							<a ondblclick = piocherMur(true) class = a-tuiles-mur>🀫</a>
+						</div>
+					</td>
+					<td class = encadrement></td>
+				</tr>
+				<tr>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+					<td class = encadrement></td>
+				</tr>
+			</table>
+			<br>
+			<table id = exposition>
+				<tr>
+					<td><a class = a-tuiles-fleurs></a></td>
+					<td><a class = a-tuiles-fleurs></a></td>
+					<td><a class = a-tuiles-fleurs></a></td>
+					<td><a class = a-tuiles-fleurs></a></td>
+					<td class = td-vide colspan = 14 rowspan = 2></td>
+				</tr>
+				<tr>
+					<td><a class = a-tuiles-saisons></a></td>
+					<td><a class = a-tuiles-saisons></a></td>
+					<td><a class = a-tuiles-saisons></a></td>
+					<td><a class = a-tuiles-saisons></a></td>
+				</tr>
+				<tr>
+					<td class = td-combinaison-1></td>
+					<td class = td-combinaison-1></td>
+					<td class = td-combinaison-1></td>
+					<td class = td-combinaison-1></td>
+					<td class = td-combinaison-2></td>
+					<td class = td-combinaison-2></td>
+					<td class = td-combinaison-2></td>
+					<td class = td-combinaison-2></td>
+					<td class = td-combinaison-3></td>
+					<td class = td-combinaison-3></td>
+					<td class = td-combinaison-3></td>
+					<td class = td-combinaison-3></td>
+					<td class = td-combinaison-4></td>
+					<td class = td-combinaison-4></td>
+					<td class = td-combinaison-4></td>
+					<td class = td-combinaison-4></td>
+					<td class = td-combinaison-5></td>
+					<td class = td-combinaison-5></td>
+				</tr>
+			</table>
+			<br>
+			<table>
+				<tr>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div class = td-main></div></td>
+					<td><div id = pioche-main></div></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table id = annonces>
+				<tr>
+					<th colspan = 2>Annonces</th>
+				</tr>
+				<tr>
+					<td colspan = 2><hr></td>
+				</tr>
+				<tr>
+					<td><button onclick = chow() class = button-annonces>« Chow »</button></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><button onclick = pung(false) class = button-annonces>« Pung »</button></td>
+					<td><button onclick = pung(true) class = button-annonces>« Pung interne »</button></td>
+				</tr>
+				<tr>
+					<td><button onclick = kong(false) class = button-annonces>« Kong »</button></td>
+					<td><button onclick = kong(true) class = button-annonces>« Kong interne »</button></td>
+				</tr>
+				<tr>
+					<td><button onclick = mahjong() class = button-annonces>« Mah-jong »</button></td>
+					<td><button onclick = paire() class = button-annonces>« Paire »</button></td>
+				</tr>
+				<tr>
+					<td colspan = 2><hr></td>
+				</tr>
+				<tr>
+					<td colspan = 2><button ondblclick = valider() id = valider>Valider</button></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<script>
+	nouveauPaquet();
+	distribution();
+</script>
+
+
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                   Mah-jong                                                     -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->
