@@ -15,7 +15,7 @@ a:hover {
 .a-fleurs, .a-saisons, .a-combinaisons, .a-remplacement {
 	cursor: not-allowed;
 }
-.a-selectionnees {
+.a-sélectionnées {
 	background-color: #ffff00;
 }
 .tr-vertical .a-mur, #div-haut-droite a, #a-haut-droite, #div-bas-gauche a, #a-bas-gauche {
@@ -57,7 +57,7 @@ button:hover {
 button:active {
 	background-color: #667dd2;
 }
-#button-selectionner, #button-valider {
+#button-sélectionner, #button-valider {
 	font-size: 150%;
 }
 
@@ -69,7 +69,7 @@ button:active {
 	bottom: 25%;
 	right: 25%;
 }
-.div-tres-haut {
+.div-très-haut {
 	position: absolute;
 	bottom: 50%;
 	right: 50%;

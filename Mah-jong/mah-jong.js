@@ -29,7 +29,7 @@ compteRemplacer = 8 - 1;
 bascule2PiocherMur = true;
 bascule4PiocherMur = true;
 basculeVerouillageBoutons = true;
-basculeSelectionner = true;
+basculesélectionner = true;
 basculeValider = true;
 annonce = "";
 combinaisons = 0;
@@ -318,7 +318,7 @@ function joueurSuivant() {
 function remplacer() {
 
 	tuileRemplacer = paquet[144 - 1 - compteRemplacer];
-	document.getElementsByClassName("div-tres-haut")[compteRemplacer].innerHTML = "";
+	document.getElementsByClassName("div-très-haut")[compteRemplacer].innerHTML = "";
 	document.getElementById("td-pioche-main").innerHTML = "<a id = a-pioche-main>" + tuileRemplacer.unicode + "</a>";
 	document.getElementById("a-pioche-main").title = tuileRemplacer.nom();
 	compteRemplacer--;
@@ -414,7 +414,7 @@ function estPaire(tuile1, tuile2) {
 
 function valider() {
 
-	tuilesSelectionnees = document.getElementsByClassName("a-selectionnees");
+	tuilesSelectionnees = document.getElementsByClassName("a-sélectionnées");
 	if (tuilesSelectionnees.length == 0) {
 		alert("Veuillez sélectionner des tuiles.");
 	} else {
@@ -529,14 +529,14 @@ function verouillageBoutons() {
 
 }
 
-function selectionner() {
+function sélectionner() {
 
-	if (basculeSelectionner) {
-		document.getElementById("button-selectionner").style.opacity = 0.5;
-		basculeSelectionner = false;
+	if (basculesélectionner) {
+		document.getElementById("button-sélectionner").style.opacity = 0.5;
+		basculesélectionner = false;
 	} else {
-		document.getElementById("button-selectionner").style.opacity = 1;
-		basculeSelectionner = true;
+		document.getElementById("button-sélectionner").style.opacity = 1;
+		basculesélectionner = true;
 	}
 	tuilesMain = document.getElementsByClassName("a-main");
 	piocheMain = document.getElementById("a-pioche-main");
@@ -553,7 +553,7 @@ function selectionner() {
 			tuile.addEventListener(
 				"click",
 				() => {
-					tuile.classList.toggle("a-selectionnees");
+					tuile.classList.toggle("a-sélectionnées");
 				}
 			);
 		}
