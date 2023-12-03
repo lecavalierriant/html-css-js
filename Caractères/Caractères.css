@@ -1,0 +1,34 @@
+
+body {
+	background-color: #303841;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	text-align: center;
+	font-family: consolas;
+}
+
+@media (min-width: 910px) {
+	body {columns: 2}
+}
+
+@media (min-width: 1350px) {
+	body {columns: 3}
+}
+
+input {
+	font-size: 150%;
+	font-family: consolas;
+}
+
+table {
+	border: 2px #ffffff solid;
+	width: 100%;
+}
+
+td {transition: ease 0.2s;}
+td:hover {
+	cursor: pointer;
+	background-color: #ffffff;
+	color: #000000;
+	text-shadow: 0 0 0;
+}
