@@ -5,8 +5,9 @@ a {
 	color: #ffffff;
 }
 a:hover {
-	color: #000000;
+	color: #cccc00;
 	cursor: pointer;
+	font-weight: bold;
 }
 
 body {
@@ -15,25 +16,7 @@ body {
 	text-shadow: 1px 1px 1px #000000;
 	text-align: center;
 	font-family: consolas;
-	font-size: 150%;
-}
-
-@media (orientation: landscape) and (min-width: 910px) {
-	body {
-		columns: 2;
-		font-size: 100%;
-	}
-}
-
-@media (orientation: landscape) and (min-width: 1350px) {
-	body {
-		columns: 3;
-		font-size: 100%;
-	}
-}
-
-nav {
-	text-align: left;
+	font-size: 200%;
 }
 
 iframe {
@@ -47,6 +30,10 @@ input {
 	font-family: consolas;
 }
 
+nav {
+	text-align: left;
+}
+
 table {
 	border: 2px #ffffff solid;
 	width: 100%;
@@ -58,4 +45,28 @@ td:hover {
 	background-color: #ffffff;
 	color: #000000;
 	text-shadow: 0 0 0;
+}
+
+li {margin: 10%;}
+
+
+.inutile {background-color: #cc0000;}
+.vide {background-color: #cccccc;}
+.vide:hover {cursor: not-allowed;}
+.utile {background-color: #00cccc}
+.doublon {border: 2px dashed #cccc00;}
+
+
+@media (orientation: landscape) and (min-width: 910px) {
+	body {
+		columns: 2;
+		font-size: 100%;
+	}
+}
+
+@media (orientation: landscape) and (min-width: 1350px) {
+	body {
+		columns: 3;
+		font-size: 100%;
+	}
 }

@@ -1,11 +1,14 @@
 
 copier = (caractère) => {
+
 	navigator.clipboard.writeText(caractère).then(
 		() => {alert("Caractère « " + caractère + " » copié !");}
 	);
+
 };
 
 document.addEventListener(
+
 	"DOMContentLoaded",
 	function () {
 		if (document.title == "Alt +") {
@@ -14,42 +17,39 @@ document.addEventListener(
 			éléments = document.querySelectorAll("tr");
 		}
 		total = éléments.length;
-		occurences = {};
-		nombreClasses = 0;
+		occurrences = {};
+		classes = 0;
 		éléments.forEach(
 			function (élément) {
 				classe = élément.getAttribute("class");
 				if (classe) {
-					if (!occurences[classe]) {occurences[classe] = 1;
-				} else {
-					occurences[classe]++;}
-					nombreClasses++;
+					if (!occurrences[classe]) {
+						occurrences[classe] = 1;
+					} else {
+						occurrences[classe]++;
+					}
+					classes++;
 				}
 			}
 		);
-		statistiques = document.getElementById("statistiques");
-
-		// occurence = total - occurences.length();
-		occurence = total - nombreClasses;
-		pourcentage = (occurence / total) * 100;
-		ligne = statistiques.insertRow();
-		ligne.insertCell(0).textContent = "Défaut";
-		ligne.insertCell(1).textContent = occurence;
-		ligne.insertCell(2).textContent = pourcentage.toFixed(1) + "%";
-
-		for (classe in occurences) {
-			occurence = occurences[classe];
-			pourcentage = (occurence / total) * 100;
-			ligne = statistiques.insertRow();
-			ligne.insertCell(0).textContent = classe;
-			ligne.insertCell(1).textContent = occurence;
-			ligne.insertCell(2).textContent = pourcentage.toFixed(1) + "%";
+		statistiques = document.getElementById("table-statistiques");
+		nouvelleLigneStatistiques("Défaut", total - classes, total);
+		for (classe in occurrences) {
+			nouvelleLigneStatistiques(classe, occurrences[classe], total);
 		}
-
-		ligne = statistiques.insertRow();
-		ligne.insertCell(0).textContent = "Total";
-		ligne.insertCell(1).textContent = total;
-		ligne.insertCell(2).textContent = "100%";
-
+		nouvelleLigneStatistiques("Total", total, total);
 	}
+
 );
+
+function nouvelleLigneStatistiques(classe, occurrences, total) {
+
+	pourcentage = (occurrences / total) * 100;
+	ligne = statistiques.insertRow();
+	ligne.insertCell(0).textContent = classe;
+	ligne.insertCell(1).textContent = occurrences;
+	ligne.insertCell(2).textContent = pourcentage.toFixed(1).replace(".", ",") + " %";
+
+;
+
+}

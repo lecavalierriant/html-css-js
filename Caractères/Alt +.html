@@ -13,11 +13,6 @@
 			font-size: 100%;
 			font-weight: bold;
 		}
-		.vide {background-color: #cccccc;}
-		.vide:hover {cursor: not-allowed;}
-		.inutile {background-color: #cc0000;}
-		.doublon {border: 2px dashed #cccc00;}
-		.utile {background-color: #00cccc;}
 	</style>
 </head>
 <iframe src = nav.html></iframe>
@@ -85,14 +80,16 @@ Police :
 <script>
 	polices.addEventListener(
 		"change", function() {
-			policeSelectionnee = polices.value;
-			table.style.fontFamily = policeSelectionnee;
-			input.style.fontFamily = policeSelectionnee;
+			police = polices.value;
+			for (var i = document.querySelectorAll("#table-caractères td").length - 1; i >= 0; i--) {
+				document.querySelectorAll("#table-caractères td")[i].style.fontFamily = police;
+			}
+			input.style.fontFamily = police;
 		}
 	);
 </script>
 <br><br>
-<table id = table>
+<table id = table-caractères>
 	<tr>
 		<th><button>alt</button> + <button>?</button></th>
 		<th colspan = 2>Caractères</th>
@@ -1540,15 +1537,15 @@ Police :
 	</tr>
 </table>
 <h2>Légende</h2>
-<table id = légende>
+<table>
 	<tr><th>Défaut</th></tr>
-	<tr><th class = utile>Utile</th></tr>
-	<tr><th class = inutile>Inutile</th></tr>
-	<tr><th class = vide>Vide</th></tr>
-	<tr><th class = doublon>En doublon</th></tr>
+	<tr><td class = utile>Utile</td></tr>
+	<tr><td class = inutile>Inutile</td></tr>
+	<tr><td class = vide>Vide</td></tr>
+	<tr><td class = doublon>En doublon</td></tr>
 </table>
 <h2>Statistiques</h2>
-<table id = statistiques>
+<table id = table-statistiques>
 	<tr>
 		<th>Classe</th>
 		<th>Occurrences</th>
