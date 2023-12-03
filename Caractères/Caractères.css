@@ -1,4 +1,14 @@
 
+a {
+	text-decoration: none;
+	transition: ease 0.2s;
+	color: #ffffff;
+}
+a:hover {
+	color: #000000;
+	cursor: pointer;
+}
+
 body {
 	background-color: #303841;
 	color: #ffffff;
@@ -13,6 +23,22 @@ body {
 
 @media (min-width: 1350px) {
 	body {columns: 3}
+}
+
+@media (orientation: landscape) {
+	body {
+		columns: 1;
+		font-size: 200%;
+	}
+}
+
+nav {
+	text-align: left;
+}
+
+iframe {
+	width: 100%;
+	border: 0;
 }
 
 input {
