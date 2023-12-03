@@ -18,14 +18,14 @@ body {
 	font-size: 200%;
 }
 
-@media (min-width: 910px) {
+@media (orientation: landscape) and (min-width: 910px) {
 	body {
 		columns: 2;
 		font-size: 150%;
 	}
 }
 
-@media (min-width: 1350px) {
+@media (orientation: landscape) and (min-width: 1350px) {
 	body {
 		columns: 3;
 		font-size: 100%;
@@ -38,6 +38,7 @@ nav {
 
 iframe {
 	width: 100%;
+	aspect-ratio: 2;
 	border: 0;
 }
 
