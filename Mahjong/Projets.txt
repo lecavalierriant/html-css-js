@@ -1,0 +1,16 @@
+Problèmes
+
+	hd et bg 2nde fois piocherMur()
+	si l'on piocheMur() un tres-haut il disparait
+	décalage de 2 tuiles trou fleurs
+
+
+Implémentation
+
+	Enregistrer sous forme d'unicode dans sessionStorage ou localStorage puis récupérer
+	(ou envoyer via un form)
+		- le paquet
+		- la main (interne et externe)
+		- les différentes variables globales (fichier .js)
+	Trouver un moyen de proposer à tous d'annoncer quand un joueur crache
+	Cracher -> changer l'id de la tuile crachée

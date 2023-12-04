@@ -1,0 +1,1568 @@
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                   Caractères                                                   -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->
+
+
+<!DOCTYPE html>
+<html lang = fr>
+<head>
+	<title>Alt +</title>
+	<meta charset = utf-8>
+	<link rel = stylesheet href = Caractères.css>
+	<script src = Caractères.js></script>
+	<style>
+		button {
+			font-family: consolas;
+			background: #303841;
+			color: #ffffff;
+			font-size: 100%;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<iframe src = Caractères.html></iframe>
+<h1>Alt +</h1>
+Police :
+<select id = polices>
+	<optgroup label = "Avec empattement (serif)">
+		<option value = "Cambria">Cambria</option>
+		<option value = "Constantia">Constantia</option>
+		<option value = "Garamond">Garamond</option>
+		<option value = "Georgia">Georgia</option>
+		<option value = "Lucida Bright">Lucida Bright</option>
+		<option value = "MS Serif">MS Serif</option>
+		<option value = "Century Schoolbook">Century Schoolbook</option>
+		<option value = "Book Antiqua">Book Antiqua</option>
+		<option value = "Rockwell">Rockwell</option>
+		<option value = "Times New Roman">Times New Roman</option>
+	</optgroup>
+	<optgroup label = "Linéales (sans-serif)">
+		<option value = "Arial">Arial</option>
+		<option value = "Bahnschrift">Bahnschrift</option>
+		<option value = "Calibri">Calibri</option>
+		<option value = "Century Gothic">Century Gothic</option>
+		<option value = "Corbel">Corbel</option>
+		<option value = "Franklin Gothic">Franklin Gothic</option>
+		<option value = "Haettenschweiler">Haettenschweiler</option>
+		<option value = "Helvetica">Helvetica</option>
+		<option value = "Impact">Impact</option>
+		<option value = "Lucida Sans">Lucida Sans</option>
+		<option value = "MS Sans Serif">MS Sans Serif</option>
+		<option value = "Segoe UI">Segoe UI</option>
+		<option value = "Tahoma">Tahoma</option>
+		<option value = "Trebuchet MS">Trebuchet MS</option>
+		<option value = "Verdana">Verdana</option>
+	</optgroup>
+	<optgroup label = "À chasse fixe">
+		<option value = "Consolas">Consolas</option>
+		<option value = "Courier">Courier</option>
+		<option value = "Courier New">Courier New</option>
+		<option value = "Lucida Console">Lucida Console</option>
+		<option value = "Monospace">Monospace</option>
+		<option value = "MS Gothic">MS Gothic</option>
+		<option value = "Ubuntu Mono">Ubuntu Mono</option>
+	</optgroup>
+	<optgroup label = "Manuscrite">
+		<option value = "Comic Sans MS">Comic Sans MS</option>
+		<option value = "Freestyle Script">Freestyle Script</option>
+		<option value = "Lucida Handwriting">Lucida Handwriting</option>
+	</optgroup>
+	<optgroup label = "Non latines">
+		<option value = "SimSun">SimSun</option>
+	</optgroup>
+	<optgroup label = "Dingbats / Caractères des symboles">
+		<option value = "Symbol">Symbol</option>
+		<option value = "Wingdings">Wingdings</option>
+		<option value = "Webdings">Webdings</option>
+	</optgroup>
+	<optgroup label = "Divers">
+		<option value = "Cooper Black">Cooper Black</option>
+		<option value = "Jokerman">Jokerman</option>
+	</optgroup>
+</select>
+<br><br>
+<input type = text placeholder = "Essayez un code ici" id = input>
+<script>
+	polices.addEventListener(
+		"change", function() {
+			police = polices.value;
+			for (var i = document.querySelectorAll("#table-caractères td").length - 1; i >= 0; i--) {
+				document.querySelectorAll("#table-caractères td")[i].style.fontFamily = police;
+			}
+			input.style.fontFamily = police;
+		}
+	);
+</script>
+<br><br>
+<table id = table-caractères>
+	<tr>
+		<th><button>alt</button> + <button>?</button></th>
+		<th colspan = 2>Caractères</th>
+		<th><button>alt</button> + <button>0</button> + <button>?</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button></th>
+		<td onclick = copier(this.innerHTML)>☺</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>0</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button></th>
+		<td onclick = copier(this.innerHTML)>☻</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>0</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button></th>
+		<td onclick = copier(this.innerHTML)>♥</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>0</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button></th>
+		<td onclick = copier(this.innerHTML)>♦</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>0</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button></th>
+		<td onclick = copier(this.innerHTML)>♣</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>0</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button></th>
+		<td onclick = copier(this.innerHTML)>♠</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>0</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button></th>
+		<td onclick = copier(this.innerHTML)>•</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>0</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button></th>
+		<td onclick = copier(this.innerHTML)>◘</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>0</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button></th>
+		<td onclick = copier(this.innerHTML)>○</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>0</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button></th>
+		<td onclick = copier(this.innerHTML)>◙</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>1</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button></th>
+		<td onclick = copier(this.innerHTML)>♂</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>1</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>2</button></th>
+		<td onclick = copier(this.innerHTML)>♀</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>1</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>3</button></th>
+		<td onclick = copier(this.innerHTML)>♪</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>1</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>4</button></th>
+		<td onclick = copier(this.innerHTML)>♫</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>1</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>5</button></th>
+		<td onclick = copier(this.innerHTML)>☼</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>1</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>6</button></th>
+		<td onclick = copier(this.innerHTML)>►</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>1</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>7</button></th>
+		<td onclick = copier(this.innerHTML)>◄</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>1</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = utile><button>1</button> + <button>8</button></th>
+		<td class = utile onclick = copier(this.innerHTML)>↕</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>1</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>9</button></th>
+		<td onclick = copier(this.innerHTML)>‼</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>1</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>0</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>¶</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>2</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>§</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>2</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>2</button></th>
+		<td onclick = copier(this.innerHTML)>▬</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>2</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>3</button></th>
+		<td onclick = copier(this.innerHTML)>↨</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>2</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = utile><button>2</button> + <button>4</button></th>
+		<td class = utile onclick = copier(this.innerHTML)>↑</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>2</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = utile><button>2</button> + <button>5</button></th>
+		<td class = utile onclick = copier(this.innerHTML)>↓</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>2</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th class = utile><button>2</button> + <button>6</button></th>
+		<td class = utile onclick = copier(this.innerHTML)>→</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>2</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th class = utile><button>2</button> + <button>7</button></th>
+		<td class = utile onclick = copier(this.innerHTML)>←</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>2</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>8</button></th>
+		<td onclick = copier(this.innerHTML)>∟</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>2</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = utile><button>2</button> + <button>9</button></th>
+		<td class = utile onclick = copier(this.innerHTML)>↔</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>2</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button> + <button>0</button></th>
+		<td onclick = copier(this.innerHTML)>▲</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>3</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button> + <button>1</button></th>
+		<td onclick = copier(this.innerHTML)>▼</td>
+		<td class = vide></td>
+		<th><button>0</button> + <button>3</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button> + <button>2</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)> </td>
+		<th><button>0</button> + <button>3</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button> + <button>3</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>!</td>
+		<th><button>0</button> + <button>3</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button> + <button>4</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>"</td>
+		<th><button>0</button> + <button>3</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button> + <button>5</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>#</td>
+		<th><button>0</button> + <button>3</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button> + <button>6</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>$</td>
+		<th><button>0</button> + <button>3</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button> + <button>7</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>%</td>
+		<th><button>0</button> + <button>3</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button> + <button>8</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>&</td>
+		<th><button>0</button> + <button>3</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>3</button> + <button>9</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>'</td>
+		<th><button>0</button> + <button>3</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button> + <button>0</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>(</td>
+		<th><button>0</button> + <button>4</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button> + <button>1</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>)</td>
+		<th><button>0</button> + <button>4</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button> + <button>2</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>*</td>
+		<th><button>0</button> + <button>4</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button> + <button>3</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>+</td>
+		<th><button>0</button> + <button>4</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button> + <button>4</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>,</td>
+		<th><button>0</button> + <button>4</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button> + <button>5</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>-</td>
+		<th><button>0</button> + <button>4</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button> + <button>6</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>.</td>
+		<th><button>0</button> + <button>4</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button> + <button>7</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>/</td>
+		<th><button>0</button> + <button>4</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button> + <button>8</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>0</td>
+		<th><button>0</button> + <button>4</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>4</button> + <button>9</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>1</td>
+		<th><button>0</button> + <button>4</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button> + <button>0</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>2</td>
+		<th><button>0</button> + <button>5</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button> + <button>1</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>3</td>
+		<th><button>0</button> + <button>5</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button> + <button>2</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>4</td>
+		<th><button>0</button> + <button>5</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button> + <button>3</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>5</td>
+		<th><button>0</button> + <button>5</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button> + <button>4</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>6</td>
+		<th><button>0</button> + <button>5</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button> + <button>5</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>7</td>
+		<th><button>0</button> + <button>5</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button> + <button>6</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>8</td>
+		<th><button>0</button> + <button>5</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button> + <button>7</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>9</td>
+		<th><button>0</button> + <button>5</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button> + <button>8</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>:</td>
+		<th><button>0</button> + <button>5</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>5</button> + <button>9</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>;</td>
+		<th><button>0</button> + <button>5</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button> + <button>0</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)><</td>
+		<th><button>0</button> + <button>6</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button> + <button>1</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>=</td>
+		<th><button>0</button> + <button>6</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button> + <button>2</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>></td>
+		<th><button>0</button> + <button>6</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button> + <button>3</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>?</td>
+		<th><button>0</button> + <button>6</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button> + <button>4</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>@</td>
+		<th><button>0</button> + <button>6</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button> + <button>5</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>A</td>
+		<th><button>0</button> + <button>6</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button> + <button>6</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>B</td>
+		<th><button>0</button> + <button>6</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button> + <button>7</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>C</td>
+		<th><button>0</button> + <button>6</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button> + <button>8</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>D</td>
+		<th><button>0</button> + <button>6</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>6</button> + <button>9</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>E</td>
+		<th><button>0</button> + <button>6</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button> + <button>0</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>F</td>
+		<th><button>0</button> + <button>7</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button> + <button>1</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>G</td>
+		<th><button>0</button> + <button>7</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button> + <button>2</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>H</td>
+		<th><button>0</button> + <button>7</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button> + <button>3</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>I</td>
+		<th><button>0</button> + <button>7</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button> + <button>4</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>J</td>
+		<th><button>0</button> + <button>7</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button> + <button>5</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>K</td>
+		<th><button>0</button> + <button>7</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button> + <button>6</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>L</td>
+		<th><button>0</button> + <button>7</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button> + <button>7</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>M</td>
+		<th><button>0</button> + <button>7</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button> + <button>8</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>N</td>
+		<th><button>0</button> + <button>7</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>7</button> + <button>9</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>O</td>
+		<th><button>0</button> + <button>7</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button> + <button>0</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>P</td>
+		<th><button>0</button> + <button>8</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button> + <button>1</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>Q</td>
+		<th><button>0</button> + <button>8</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button> + <button>2</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>R</td>
+		<th><button>0</button> + <button>8</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button> + <button>3</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>S</td>
+		<th><button>0</button> + <button>8</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button> + <button>4</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>T</td>
+		<th><button>0</button> + <button>8</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button> + <button>5</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>U</td>
+		<th><button>0</button> + <button>8</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button> + <button>6</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>V</td>
+		<th><button>0</button> + <button>8</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button> + <button>7</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>W</td>
+		<th><button>0</button> + <button>8</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button> + <button>8</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>X</td>
+		<th><button>0</button> + <button>8</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>8</button> + <button>9</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>Y</td>
+		<th><button>0</button> + <button>8</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button> + <button>0</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>Z</td>
+		<th><button>0</button> + <button>9</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button> + <button>1</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>[</td>
+		<th><button>0</button> + <button>9</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button> + <button>2</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>\</td>
+		<th><button>0</button> + <button>9</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button> + <button>3</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>]</td>
+		<th><button>0</button> + <button>9</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button> + <button>4</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>^</td>
+		<th><button>0</button> + <button>9</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button> + <button>5</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>_</td>
+		<th><button>0</button> + <button>9</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button> + <button>6</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>`</td>
+		<th><button>0</button> + <button>9</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button> + <button>7</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>a</td>
+		<th><button>0</button> + <button>9</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button> + <button>8</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>b</td>
+		<th><button>0</button> + <button>9</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>9</button> + <button>9</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>c</td>
+		<th><button>0</button> + <button>9</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button> + <button>0</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>d</td>
+		<th><button>1</button> + <button>0</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button> + <button>1</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>e</td>
+		<th><button>1</button> + <button>0</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button> + <button>2</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>f</td>
+		<th><button>1</button> + <button>0</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button> + <button>3</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>g</td>
+		<th><button>1</button> + <button>0</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button> + <button>4</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>h</td>
+		<th><button>1</button> + <button>0</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button> + <button>5</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>i</td>
+		<th><button>1</button> + <button>0</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button> + <button>6</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>j</td>
+		<th><button>1</button> + <button>0</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button> + <button>7</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>k</td>
+		<th><button>1</button> + <button>0</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button> + <button>8</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>l</td>
+		<th><button>1</button> + <button>0</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>0</button> + <button>9</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>m</td>
+		<th><button>1</button> + <button>0</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button> + <button>0</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>n</td>
+		<th><button>1</button> + <button>1</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button> + <button>1</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>o</td>
+		<th><button>1</button> + <button>1</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button> + <button>2</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>p</td>
+		<th><button>1</button> + <button>1</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button> + <button>3</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>q</td>
+		<th><button>1</button> + <button>1</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button> + <button>4</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>r</td>
+		<th><button>1</button> + <button>1</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button> + <button>5</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>s</td>
+		<th><button>1</button> + <button>1</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button> + <button>6</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>t</td>
+		<th><button>1</button> + <button>1</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button> + <button>7</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>u</td>
+		<th><button>1</button> + <button>1</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button> + <button>8</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>v</td>
+		<th><button>1</button> + <button>1</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>1</button> + <button>9</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>w</td>
+		<th><button>1</button> + <button>1</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>2</button> + <button>0</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>x</td>
+		<th><button>1</button> + <button>2</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>2</button> + <button>1</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>y</td>
+		<th><button>1</button> + <button>2</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>2</button> + <button>2</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>z</td>
+		<th><button>1</button> + <button>2</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>2</button> + <button>3</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>{</td>
+		<th><button>1</button> + <button>2</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>2</button> + <button>4</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>|</td>
+		<th><button>1</button> + <button>2</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>2</button> + <button>5</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>}</td>
+		<th><button>1</button> + <button>2</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>2</button> + <button>6</button></th>
+		<td colspan = 2 class = "inutile doublon" onclick = copier(this.innerHTML)>~</td>
+		<th><button>1</button> + <button>2</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>2</button> + <button>7</button></th>
+		<td onclick = copier(this.innerHTML)>⌂</td>
+		<td class = vide></td>
+		<th><button>1</button> + <button>2</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>2</button> + <button>8</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>Ç</td>
+		<td class = inutile onclick = copier(this.innerHTML)>€</td>
+		<th class = inutile><button>1</button> + <button>2</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>2</button> + <button>9</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ü</td>
+		<td onclick = copier(this.innerHTML)></td>
+		<th><button>1</button> + <button>2</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>3</button> + <button>0</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>é</td>
+		<td onclick = copier(this.innerHTML)>‚</td>
+		<th><button>1</button> + <button>3</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>3</button> + <button>1</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>â</td>
+		<td class = doublon onclick = copier(this.innerHTML)>ƒ</td>
+		<th class = doublon><button>1</button> + <button>3</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>3</button> + <button>2</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ä</td>
+		<td onclick = copier(this.innerHTML)>„</td>
+		<th><button>1</button> + <button>3</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>3</button> + <button>3</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>à</td>
+		<td class = utile onclick = copier(this.innerHTML)>…</td>
+		<th class = utile><button>1</button> + <button>3</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>3</button> + <button>4</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>å</td>
+		<td onclick = copier(this.innerHTML)>†</td>
+		<th><button>1</button> + <button>3</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>3</button> + <button>5</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ç</td>
+		<td onclick = copier(this.innerHTML)>‡</td>
+		<th><button>1</button> + <button>3</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>3</button> + <button>6</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ê</td>
+		<td onclick = copier(this.innerHTML)>ˆ</td>
+		<th><button>1</button> + <button>3</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>3</button> + <button>7</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ë</td>
+		<td onclick = copier(this.innerHTML)>‰</td>
+		<th><button>1</button> + <button>3</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>3</button> + <button>8</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>è</td>
+		<td onclick = copier(this.innerHTML)>Š</td>
+		<th><button>1</button> + <button>3</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>3</button> + <button>9</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ï</td>
+		<td onclick = copier(this.innerHTML)>‹</td>
+		<th><button>1</button> + <button>3</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>4</button> + <button>0</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>î</td>
+		<td class = utile onclick = copier(this.innerHTML)>Œ</td>
+		<th class = utile><button>1</button> + <button>4</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>4</button> + <button>1</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ì</td>
+		<td onclick = copier(this.innerHTML)></td>
+		<th><button>1</button> + <button>4</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>4</button> + <button>2</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ä</td>
+		<td onclick = copier(this.innerHTML)>Ž</td>
+		<th><button>1</button> + <button>4</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>4</button> + <button>3</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>Å</td>
+		<td onclick = copier(this.innerHTML)></td>
+		<th><button>1</button> + <button>4</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>4</button> + <button>4</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>É</td>
+		<td onclick = copier(this.innerHTML)></td>
+		<th><button>1</button> + <button>4</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>4</button> + <button>5</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>æ</td>
+		<td onclick = copier(this.innerHTML)>‘</td>
+		<th><button>1</button> + <button>4</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>4</button> + <button>6</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>Æ</td>
+		<td onclick = copier(this.innerHTML)>’</td>
+		<th><button>1</button> + <button>4</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>4</button> + <button>7</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ô</td>
+		<td onclick = copier(this.innerHTML)>“</td>
+		<th><button>1</button> + <button>4</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>4</button> + <button>8</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ö</td>
+		<td onclick = copier(this.innerHTML)>”</td>
+		<th><button>1</button> + <button>4</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>4</button> + <button>9</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ò</td>
+		<td onclick = copier(this.innerHTML)>•</td>
+		<th><button>1</button> + <button>4</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>5</button> + <button>0</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>û</td>
+		<td onclick = copier(this.innerHTML)>–</td>
+		<th><button>1</button> + <button>5</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>5</button> + <button>1</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ù</td>
+		<td class = utile onclick = copier(this.innerHTML)>—</td>
+		<th class = utile><button>1</button> + <button>5</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>5</button> + <button>2</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ÿ</td>
+		<td onclick = copier(this.innerHTML)>˜</td>
+		<th class = inutile><button>1</button> + <button>5</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>5</button> + <button>3</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ö</td>
+		<td class = utile onclick = copier(this.innerHTML)>™</td>
+		<th class = utile><button>1</button> + <button>5</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>5</button> + <button>4</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ü</td>
+		<td onclick = copier(this.innerHTML)>š</td>
+		<th><button>1</button> + <button>5</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>5</button> + <button>5</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>ø</td>
+		<td onclick = copier(this.innerHTML)>›</td>
+		<th><button>1</button> + <button>5</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>5</button> + <button>6</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>£</td>
+		<td class = utile onclick = copier(this.innerHTML)>œ</td>
+		<th class = utile><button>1</button> + <button>5</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>5</button> + <button>7</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>Ø</td>
+		<td onclick = copier(this.innerHTML)></td>
+		<th><button>1</button> + <button>5</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>5</button> + <button>8</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>×</td>
+		<td onclick = copier(this.innerHTML)>ž</td>
+		<th><button>1</button> + <button>5</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>5</button> + <button>9</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>ƒ</td>
+		<td onclick = copier(this.innerHTML)>Ÿ</td>
+		<th><button>1</button> + <button>5</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>0</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>á</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)> </td>
+		<th class = "utile doublon"><button>1</button> + <button>6</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>1</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>í</td>
+		<td class = doublon onclick = copier(this.innerHTML)>¡</td>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>2</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>ó</td>
+		<td class = doublon onclick = copier(this.innerHTML)>¢</td>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>3</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>ú</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>£</td>
+		<th class = "inutile doublon"><button>1</button> + <button>6</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>6</button> + <button>4</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ñ</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>¤</td>
+		<th class = "inutile doublon"><button>1</button> + <button>6</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>6</button> + <button>5</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ñ</td>
+		<td class = doublon onclick = copier(this.innerHTML)>¥</td>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>6</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>ª</td>
+		<td class = doublon onclick = copier(this.innerHTML)>¦</td>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>7</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>º</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>§</td>
+		<th class = "inutile doublon"><button>1</button> + <button>6</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>8</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>¿</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>¨</td>
+		<th class = "inutile doublon"><button>1</button> + <button>6</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>6</button> + <button>9</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>®</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>©</td>
+		<th class = doublon><button>1</button> + <button>6</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>7</button> + <button>0</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>¬</td>
+		<td class = doublon onclick = copier(this.innerHTML)>ª</td>
+		<th class = doublon><button>1</button> + <button>7</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>7</button> + <button>1</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>½</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>«</td>
+		<th class = "utile doublon"><button>1</button> + <button>7</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>7</button> + <button>2</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>¼</td>
+		<td class = doublon onclick = copier(this.innerHTML)>¬</td>
+		<th class = doublon><button>1</button> + <button>7</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>7</button> + <button>3</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>¡</td>
+		<td class = doublon onclick = copier(this.innerHTML)>­</td>
+		<th class = doublon><button>1</button> + <button>7</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>7</button> + <button>4</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>«</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>®</td>
+		<th class = "utile doublon"><button>1</button> + <button>7</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>7</button> + <button>5</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>»</td>
+		<td class = doublon onclick = copier(this.innerHTML)>¯</td>
+		<th class = doublon><button>1</button> + <button>7</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>7</button> + <button>6</button></th>
+		<td onclick = copier(this.innerHTML)>░</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>°</td>
+		<th class = "inutile doublon"><button>1</button> + <button>7</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>7</button> + <button>7</button></th>
+		<td onclick = copier(this.innerHTML)>▒</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>±</td>
+		<th class = "utile doublon"><button>1</button> + <button>7</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>7</button> + <button>8</button></th>
+		<td onclick = copier(this.innerHTML)>▓</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>²</td>
+		<th class = "inutile doublon"><button>1</button> + <button>7</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>7</button> + <button>9</button></th>
+		<td onclick = copier(this.innerHTML)>│</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>³</td>
+		<th class = "utile doublon"><button>1</button> + <button>7</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>8</button> + <button>0</button></th>
+		<td onclick = copier(this.innerHTML)>┤</td>
+		<td class = doublon onclick = copier(this.innerHTML)>´</td>
+		<th class = doublon><button>1</button> + <button>8</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>8</button> + <button>1</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>Á</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>µ</td>
+		<th class = "inutile doublon"><button>1</button> + <button>8</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>8</button> + <button>2</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Â</td>
+		<td class = doublon onclick = copier(this.innerHTML)>¶</td>
+		<th class = doublon><button>1</button> + <button>8</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>8</button> + <button>3</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>À</td>
+		<td class = doublon onclick = copier(this.innerHTML)>·</td>
+		<th class = doublon><button>1</button> + <button>8</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>1</button> + <button>8</button> + <button>4</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>©</td>
+		<td class = doublon onclick = copier(this.innerHTML)>¸</td>
+		<th class = doublon><button>1</button> + <button>8</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>8</button> + <button>5</button></th>
+		<td onclick = copier(this.innerHTML)>╣</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>¹</td>
+		<th class = "utile doublon"><button>1</button> + <button>8</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>8</button> + <button>6</button></th>
+		<td onclick = copier(this.innerHTML)>║</td>
+		<td class = doublon onclick = copier(this.innerHTML)>º</td>
+		<th class = doublon><button>1</button> + <button>8</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>8</button> + <button>7</button></th>
+		<td onclick = copier(this.innerHTML)>╗</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>»</td>
+		<th class = "utile doublon"><button>1</button> + <button>8</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>8</button> + <button>8</button></th>
+		<td onclick = copier(this.innerHTML)>╝</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>¼</td>
+		<th class = "utile doublon"><button>1</button> + <button>8</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>8</button> + <button>9</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>¢</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>½</td>
+		<th class = "utile doublon"><button>1</button> + <button>8</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>1</button> + <button>9</button> + <button>0</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>¥</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>¾</td>
+		<th class = "utile doublon"><button>1</button> + <button>9</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>9</button> + <button>1</button></th>
+		<td onclick = copier(this.innerHTML)>┐</td>
+		<td class = doublon onclick = copier(this.innerHTML)>¿</td>
+		<th class = doublon><button>1</button> + <button>9</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>9</button> + <button>2</button></th>
+		<td onclick = copier(this.innerHTML)>└</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>À</td>
+		<th class = "inutile doublon"><button>1</button> + <button>9</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>9</button> + <button>3</button></th>
+		<td onclick = copier(this.innerHTML)>┴</td>
+		<td class = doublon onclick = copier(this.innerHTML)>Á</td>
+		<th class = doublon><button>1</button> + <button>9</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>9</button> + <button>4</button></th>
+		<td onclick = copier(this.innerHTML)>┬</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Â</td>
+		<th class = "inutile doublon"><button>1</button> + <button>9</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>9</button> + <button>5</button></th>
+		<td onclick = copier(this.innerHTML)>├</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ã</td>
+		<th class = "inutile doublon"><button>1</button> + <button>9</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>9</button> + <button>6</button></th>
+		<td onclick = copier(this.innerHTML)>─</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ä</td>
+		<th class = "inutile doublon"><button>1</button> + <button>9</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>1</button> + <button>9</button> + <button>7</button></th>
+		<td onclick = copier(this.innerHTML)>┼</td>
+		<td class = doublon onclick = copier(this.innerHTML)>Å</td>
+		<th class = doublon><button>1</button> + <button>9</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>9</button> + <button>8</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ã</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>Æ</td>
+		<th class = "utile doublon"><button>1</button> + <button>9</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>1</button> + <button>9</button> + <button>9</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ã</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>Ç</td>
+		<th class = "utile doublon"><button>1</button> + <button>9</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>0</button> + <button>0</button></th>
+		<td onclick = copier(this.innerHTML)>╚</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>È</td>
+		<th class = "inutile doublon"><button>2</button> + <button>0</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>0</button> + <button>1</button></th>
+		<td onclick = copier(this.innerHTML)>╔</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>É</td>
+		<th class = "utile doublon"><button>2</button> + <button>0</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>0</button> + <button>2</button></th>
+		<td onclick = copier(this.innerHTML)>╩</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ê</td>
+		<th class = "inutile doublon"><button>2</button> + <button>0</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>0</button> + <button>3</button></th>
+		<td onclick = copier(this.innerHTML)>╦</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ë</td>
+		<th class = "inutile doublon"><button>2</button> + <button>0</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>0</button> + <button>4</button></th>
+		<td onclick = copier(this.innerHTML)>╠</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ì</td>
+		<th class = "inutile doublon"><button>2</button> + <button>0</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>0</button> + <button>5</button></th>
+		<td onclick = copier(this.innerHTML)>═</td>
+		<td class = doublon onclick = copier(this.innerHTML)>Í</td>
+		<th class = doublon><button>2</button> + <button>0</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>0</button> + <button>6</button></th>
+		<td onclick = copier(this.innerHTML)>╬</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Î</td>
+		<th class = "inutile doublon"><button>2</button> + <button>0</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>0</button> + <button>7</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>¤</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ï</td>
+		<th class = "inutile doublon"><button>2</button> + <button>0</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>0</button> + <button>8</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>ð</td>
+		<td class = doublon onclick = copier(this.innerHTML)>Ð</td>
+		<th class = doublon><button>2</button> + <button>0</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>0</button> + <button>9</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>Ð</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ñ</td>
+		<th class = "inutile doublon"><button>2</button> + <button>0</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>0</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ê</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ò</td>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>1</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ë</td>
+		<td class = doublon onclick = copier(this.innerHTML)>Ó</td>
+		<th class = doublon><button>2</button> + <button>1</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>2</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>È</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ô</td>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>1</button> + <button>3</button></th>
+		<td onclick = copier(this.innerHTML)>ı</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Õ</td>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>1</button> + <button>4</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>Í</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ö</td>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>5</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Î</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>×</td>
+		<th class = "utile doublon"><button>2</button> + <button>1</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>6</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ï</td>
+		<td class = doublon onclick = copier(this.innerHTML)>Ø</td>
+		<th class = doublon><button>2</button> + <button>1</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>1</button> + <button>7</button></th>
+		<td onclick = copier(this.innerHTML)>┘</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ù</td>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>1</button> + <button>8</button></th>
+		<td onclick = copier(this.innerHTML)>┌</td>
+		<td class = doublon onclick = copier(this.innerHTML)>Ú</td>
+		<th class = doublon><button>2</button> + <button>1</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>1</button> + <button>9</button></th>
+		<td onclick = copier(this.innerHTML)>█</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Û</td>
+		<th class = "inutile doublon"><button>2</button> + <button>1</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>2</button> + <button>0</button></th>
+		<td onclick = copier(this.innerHTML)>▄</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ü</td>
+		<th class = "inutile doublon"><button>2</button> + <button>2</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>2</button> + <button>1</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>¦</td>
+		<td class = doublon onclick = copier(this.innerHTML)>Ý</td>
+		<th class = doublon><button>2</button> + <button>2</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>2</button> + <button>2</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ì</td>
+		<td class = doublon onclick = copier(this.innerHTML)>Þ</td>
+		<th class = doublon><button>2</button> + <button>2</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>2</button> + <button>3</button></th>
+		<td onclick = copier(this.innerHTML)>▀</td>
+		<td class = doublon onclick = copier(this.innerHTML)>ß</td>
+		<th class = doublon><button>2</button> + <button>2</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>2</button> + <button>4</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>Ó</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>à</td>
+		<th class = "inutile doublon"><button>2</button> + <button>2</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>2</button> + <button>5</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>ß</td>
+		<td class = doublon onclick = copier(this.innerHTML)>á</td>
+		<th class = doublon><button>2</button> + <button>2</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>2</button> + <button>6</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ô</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>â</td>
+		<th class = "inutile doublon"><button>2</button> + <button>2</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>2</button> + <button>7</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ò</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ã</td>
+		<th class = "inutile doublon"><button>2</button> + <button>2</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>2</button> + <button>8</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>õ</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ä</td>
+		<th class = "inutile doublon"><button>2</button> + <button>2</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>2</button> + <button>9</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Õ</td>
+		<td class = doublon onclick = copier(this.innerHTML)>å</td>
+		<th class = doublon><button>2</button> + <button>2</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>0</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>µ</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>æ</td>
+		<th class = "utile doublon"><button>2</button> + <button>3</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>3</button> + <button>1</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>þ</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ç</td>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>3</button> + <button>2</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>Þ</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>è</td>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>3</button> + <button>3</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>Ú</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>é</td>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>4</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Û</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ê</td>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>5</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>Ù</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ë</td>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>3</button> + <button>6</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>ý</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ì</td>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>3</button> + <button>7</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>Ý</td>
+		<td class = doublon onclick = copier(this.innerHTML)>í</td>
+		<th class = doublon><button>2</button> + <button>3</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>3</button> + <button>8</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>¯</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>î</td>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>3</button> + <button>9</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>´</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ï</td>
+		<th class = "inutile doublon"><button>2</button> + <button>3</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>4</button> + <button>0</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>­</td>
+		<td class = doublon onclick = copier(this.innerHTML)>ð</td>
+		<th class = doublon><button>2</button> + <button>4</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>2</button> + <button>4</button> + <button>1</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>±</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ñ</td>
+		<th class = "inutile doublon"><button>2</button> + <button>4</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>4</button> + <button>2</button></th>
+		<td onclick = copier(this.innerHTML)>‗</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ò</td>
+		<th class = "inutile doublon"><button>2</button> + <button>4</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>2</button> + <button>4</button> + <button>3</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>¾</td>
+		<td class = doublon onclick = copier(this.innerHTML)>ó</td>
+		<th class = doublon><button>2</button> + <button>4</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>4</button> + <button>4</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>¶</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ô</td>
+		<th class = "inutile doublon"><button>2</button> + <button>4</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>4</button> + <button>5</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>§</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>õ</td>
+		<th class = "inutile doublon"><button>2</button> + <button>4</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>2</button> + <button>4</button> + <button>6</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>÷</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ö</td>
+		<th class = "inutile doublon"><button>2</button> + <button>4</button> + <button>6</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>4</button> + <button>7</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>¸</td>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>÷</td>
+		<th class = "utile doublon"><button>2</button> + <button>4</button> + <button>7</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>4</button> + <button>8</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>°</td>
+		<td class = doublon onclick = copier(this.innerHTML)>ø</td>
+		<th class = doublon><button>2</button> + <button>4</button> + <button>8</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>4</button> + <button>9</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>¨</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ù</td>
+		<th class = "inutile doublon"><button>2</button> + <button>4</button> + <button>9</button></th>
+	</tr>
+	<tr>
+		<th class = doublon><button>2</button> + <button>5</button> + <button>0</button></th>
+		<td class = doublon onclick = copier(this.innerHTML)>·</td>
+		<td class = doublon onclick = copier(this.innerHTML)>ú</td>
+		<th class = doublon><button>2</button> + <button>5</button> + <button>0</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>2</button> + <button>5</button> + <button>1</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>¹</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>û</td>
+		<th class = "inutile doublon"><button>2</button> + <button>5</button> + <button>1</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>2</button> + <button>5</button> + <button>2</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)>³</td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ü</td>
+		<th class = "inutile doublon"><button>2</button> + <button>5</button> + <button>2</button></th>
+	</tr>
+	<tr>
+		<th class = "inutile doublon"><button>2</button> + <button>5</button> + <button>3</button></th>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>²</td>
+		<td class = doublon onclick = copier(this.innerHTML)>ý</td>
+		<th class = doublon><button>2</button> + <button>5</button> + <button>3</button></th>
+	</tr>
+	<tr>
+		<th><button>2</button> + <button>5</button> + <button>4</button></th>
+		<td onclick = copier(this.innerHTML)>■</td>
+		<td class = doublon onclick = copier(this.innerHTML)>þ</td>
+		<th class = doublon><button>2</button> + <button>5</button> + <button>4</button></th>
+	</tr>
+	<tr>
+		<th class = "utile doublon"><button>2</button> + <button>5</button> + <button>5</button></th>
+		<td class = "utile doublon" onclick = copier(this.innerHTML)> </td>
+		<td class = "inutile doublon" onclick = copier(this.innerHTML)>ÿ</td>
+		<th class = "inutile doublon"><button>2</button> + <button>5</button> + <button>5</button></th>
+	</tr>
+	<tr>
+		<th><button>alt</button> + <button>?</button></th>
+		<th colspan = 2>Caractères</th>
+		<th><button>alt</button> + <button>0</button> + <button>?</button></th>
+	</tr>
+</table>
+<h2>Légende</h2>
+<table>
+	<tr><th>Défaut</th></tr>
+	<tr><td class = utile>Utile</td></tr>
+	<tr><td class = inutile>Inutile</td></tr>
+	<tr><td class = vide>Vide</td></tr>
+	<tr><td class = doublon>En doublon</td></tr>
+</table>
+<h2>Statistiques</h2>
+<table id = table-statistiques>
+	<tr>
+		<th>Classe</th>
+		<th>Occurrences</th>
+		<th>Pourcentage</th>
+	</tr>
+</table>
+
+
+<!-- ============================================================================================================== -->
+<!--                                                                                                                -->
+<!--                                                   Caractères                                                   -->
+<!--                                                                                                                -->
+<!-- ============================================================================================================== -->

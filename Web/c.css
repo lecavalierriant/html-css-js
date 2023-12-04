@@ -1,0 +1,13 @@
+div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+img {
+	width: 500px;
+	transition: transform 0.5s;
+}
+
+img:hover {
+	transform: scale(1.5);
+}

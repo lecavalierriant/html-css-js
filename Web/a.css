@@ -1,0 +1,12 @@
+header {background-color: yellow;}
+nav {background-color: grey;}
+li {display: inline;}
+a {padding: 10px;}
+footer {background-color: grey;}
+.div-principal {flex: 2;}
+.div-contenu {display: flex;}
+
+.div-gauche, .div-droit {
+	background-color: silver;
+	flex: 1;
+}

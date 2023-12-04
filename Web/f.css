@@ -1,0 +1,25 @@
+*{font-family: monospace;}
+
+h1 {
+    text-shadow: 2px 4px 3px gray;
+    border: 5px solid black;
+}
+
+#selecteur {background-color: blue;}
+#attribut {background-color: orange;}
+
+.intro {
+    font-size: 18px;
+    color:white;
+}
+
+.nom,.prenom {
+    font-size: 12px;
+    text-decoration-line: underline;
+}
+.nom {text-transform: uppercase;}
+
+[href]:hover {
+    color: blue;
+    text-decoration-line: underline
+}

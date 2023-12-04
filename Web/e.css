@@ -1,0 +1,28 @@
+button {
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button-1:hover {background-color: blue;}
+.button-2:hover {box-shadow: 2px 2px 5px;}
+.button-3:hover span:after {opacity: 1;}
+
+span:after {
+	content: ">";
+	opacity: 0;
+	transition: 0.5s;
+}
+
+
+.button-4 {box-shadow: 0 9px gray;}
+.button-4:active {
+	background-color: blue;
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+
+.button-5 {opacity: 0.5;}
+.button-5:hover {opacity: 1}
+
+.div-groupe button:not(:last-child) {border-right: none;}
+.div-groupe button:hover {background-color: blue;}
