@@ -11,9 +11,8 @@ a {
 	color: #ffffff;
 }
 a:hover {
-	color: #cccc00;
+	color: #abcdef;
 	cursor: pointer;
-	font-weight: bold;
 }
 
 body {
@@ -25,9 +24,14 @@ body {
 	font-size: 200%;
 }
 
+#div-contenu {
+	border: 4px #ffffff solid;
+	padding: 1%;
+}
+
 iframe {
 	width: 100%;
-	aspect-ratio: 2 / 1;
+	aspect-ratio: 3.5;
 	border: 0;
 }
 
@@ -38,6 +42,7 @@ input {
 
 nav {
 	text-align: left;
+	font-size: 200%;
 }
 
 table {
@@ -53,7 +58,11 @@ td:hover {
 	text-shadow: 0 0 0;
 }
 
-li {margin: 10%;}
+li {
+	margin: 5%;
+	transition: ease 0.2s;
+}
+li:hover {color: #abcdef;}
 
 
 .inutile {background-color: #cc0000;}
@@ -64,17 +73,19 @@ li {margin: 10%;}
 
 
 @media (orientation: landscape) and (min-width: 910px) {
-	body {
-		columns: 2;
-		font-size: 100%;
-	}
+
+	body {font-size: 100%;}
+
+	#div-contenu {columns: 2;}
+
 }
 
 @media (orientation: landscape) and (min-width: 1350px) {
-	body {
-		columns: 3;
-		font-size: 100%;
-	}
+
+	body {font-size: 100%;}
+
+	#div-contenu {columns: 3;}
+
 }
 
 
