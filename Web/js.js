@@ -46,6 +46,9 @@ function sourceVariable() {
 
 }
 
+// confirm("Voulez-vous ?");
+// sorte d'alert() avec un bouton « Annuler » et un autre « OK »
+
 
 // ================================================================================================================= //
 //                                                                                                                   //
