@@ -1,0 +1,15 @@
+body {display: flex; align-items: center; justify-content: center; height: 100vh;}
+
+.image {max-width: 100%; nheight: auto;}
+
+@media screen and (orientation: landscape) {
+	.image {
+		display: none;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	.image {
+		display: block;
+	}
+}
