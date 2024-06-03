@@ -4,7 +4,6 @@
 /*                                                                                                                   */
 /*===================================================================================================================*/
 
-
 a {
 	text-decoration: none;
 	transition: ease 0.2s;
@@ -14,7 +13,6 @@ a:hover {
 	color: #abcdef;
 	cursor: pointer;
 }
-
 body {
 	background-color: #303841;
 	color: #ffffff;
@@ -22,34 +20,29 @@ body {
 	text-align: center;
 	font-family: consolas;
 	font-size: 200%;
+	margin: 5%;
 }
-
 #div-contenu {
 	border: 4px #ffffff solid;
 	padding: 1%;
 }
-
 iframe {
 	width: 100%;
 	aspect-ratio: 3.5;
 	border: 0;
 }
-
 input {
 	font-size: 150%;
 	font-family: consolas;
 }
-
 nav {
 	text-align: left;
 	font-size: 200%;
 }
-
 table {
 	border: 2px #ffffff solid;
 	width: 100%;
 }
-
 td {transition: ease 0.2s;}
 td:hover {
 	cursor: pointer;
@@ -57,13 +50,11 @@ td:hover {
 	color: #000000;
 	text-shadow: 0 0 0;
 }
-
 li {
-	margin: 5%;
+	margin: 2%;
 	transition: ease 0.2s;
 }
 li:hover {color: #abcdef;}
-
 
 .inutile {background-color: #cc0000;}
 .vide {background-color: #cccccc;}
@@ -71,23 +62,14 @@ li:hover {color: #abcdef;}
 .utile {background-color: #00cccc}
 .doublon {border: 2px dashed #cccc00;}
 
-
 @media (orientation: landscape) and (min-width: 910px) {
-
 	body {font-size: 100%;}
-
 	#div-contenu {columns: 2;}
-
 }
-
 @media (orientation: landscape) and (min-width: 1350px) {
-
 	body {font-size: 100%;}
-
 	#div-contenu {columns: 3;}
-
 }
-
 
 /*===================================================================================================================*/
 /*                                                                                                                   */

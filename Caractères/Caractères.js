@@ -4,17 +4,12 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
-
 copier = (caractère) => {
-
 	navigator.clipboard.writeText(caractère).then(
 		() => {alert("Caractère « " + caractère + " » copié !");}
 	);
-
 };
-
 document.addEventListener(
-
 	"DOMContentLoaded",
 	function () {
 		if (document.title == "Alt +") {
@@ -45,21 +40,15 @@ document.addEventListener(
 		}
 		nouvelleLigneStatistiques("Total", total, total);
 	}
-
 );
-
 function nouvelleLigneStatistiques(classe, occurrences, total) {
-
 	pourcentage = (occurrences / total) * 100;
 	ligne = statistiques.insertRow();
 	ligne.insertCell(0).textContent = classe;
 	ligne.insertCell(1).textContent = occurrences;
 	ligne.insertCell(2).textContent = pourcentage.toFixed(1).replace(".", ",") + " %";
-
 ;
-
 }
-
 
 // ================================================================================================================= //
 //                                                                                                                   //
