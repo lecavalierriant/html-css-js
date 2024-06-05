@@ -19,8 +19,8 @@ body {
 	text-shadow: 1px 1px 1px #000000;
 	text-align: center;
 	font-family: consolas;
-	font-size: 200%;
-	margin: 5%;
+	font-size: 125%;
+	margin: 2%;
 }
 #div-contenu {
 	border: 4px #ffffff solid;
@@ -28,7 +28,7 @@ body {
 }
 iframe {
 	width: 100%;
-	aspect-ratio: 3.5;
+	aspect-ratio: 4;
 	border: 0;
 }
 input {
@@ -37,11 +37,15 @@ input {
 }
 nav {
 	text-align: left;
-	font-size: 200%;
+	font-size: 175%;
 }
 table {
 	border: 2px #ffffff solid;
-	width: 100%;
+	width: auto;
+	margin: auto;
+}
+.table-invisible {
+	border: 0;
 }
 td {transition: ease 0.2s;}
 td:hover {
@@ -50,8 +54,11 @@ td:hover {
 	color: #000000;
 	text-shadow: 0 0 0;
 }
+th {
+	padding: 15px;
+}
 li {
-	margin: 2%;
+	margin: 1%;
 	transition: ease 0.2s;
 }
 li:hover {color: #abcdef;}
@@ -63,11 +70,11 @@ li:hover {color: #abcdef;}
 .doublon {border: 2px dashed #cccc00;}
 
 @media (orientation: landscape) and (min-width: 910px) {
-	body {font-size: 100%;}
+/*	body {font-size: 100%;}*/
 	#div-contenu {columns: 2;}
 }
 @media (orientation: landscape) and (min-width: 1350px) {
-	body {font-size: 100%;}
+/*	body {font-size: 100%;}*/
 	#div-contenu {columns: 3;}
 }
 

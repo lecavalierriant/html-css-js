@@ -11,6 +11,7 @@
 	<meta charset = utf-8>
 	<link rel = stylesheet href = Caractères.css>
 	<link rel = "shortcut icon" href = Caractères.ico>
+	<script src = Caractères.js></script>
 </head>
 <iframe src = Caractères.html></iframe>
 <h1>Alpbahets</h1>
@@ -21,15 +22,23 @@
 		<th>Minuscule</th>
 		<th>Nom ancien</th>
 		<th>Nom moderne</th>
-		<th>Prononciation ancienne</th>
-		<th>Prononciation moderne</th>
+		<th>🗣️ ancienne</th>
+		<th>🗣️ moderne</th>
 	</tr>
 	<tr><td>Α</td><td>α</td><td>alpha</td><td>alfa</td><td colspan = 2>a</td></tr>
-	<tr><td>Β</td><td>β / ϐ</td><td>bêta</td><td>vita</td><td>b</td><td>v</td></tr>
-	<tr><td>Γ</td><td>γ</td><td>gamma</td><td>gama</td><td colspan = 2>g</td></tr>
+	<tr>
+		<td rowspan = 2>Β</td>
+		<td>β</td>
+		<td rowspan = 2>bêta</td>
+		<td rowspan = 2>vita</td>
+		<td rowspan = 2>b</td>
+		<td rowspan = 2>v</td>
+	</tr>
+	<tr><td>ϐ</td></tr>
+	<tr><td>Γ</td><td>γ</td><td>gamma</td><td>gama</td><td colspan = 2>gu</td></tr>
 	<tr><td>Δ</td><td>δ</td><td>delta</td><td>delta</td><td>d</td><td>parfois dh</td></tr>
 	<tr><td>Ε</td><td>ε</td><td>epsilon</td><td>epsilon</td><td colspan = 2>e</td></tr>
-	<tr><td>Ζ</td><td>ζ</td><td>zêta</td><td>zita</td><td colspan = 2>z</td></tr>
+	<tr><td>Ζ</td><td>ζ</td><td>zêta</td><td>zita</td><td>dz, z</td><td>z</td></tr>
 	<tr><td>Η</td><td>η</td><td>êta</td><td>ita</td><td>ê</td><td>i</td></tr>
 	<tr><td>Θ</td><td>θ</td><td>thêta</td><td>thita</td><td colspan = 2>th</td></tr>
 	<tr><td>Ι</td><td>ι</td><td>iota</td><td>iota</td><td>i</td><td>j</td></tr>
@@ -44,52 +53,130 @@
 	<tr><td>Σ</td><td>σ / ς</td><td>sigma</td><td>sigma</td><td colspan = 2>s</td></tr>
 	<tr><td>Τ</td><td>τ</td><td>tau</td><td>taf</td><td colspan = 2>t</td></tr>
 	<tr><td>Υ</td><td>υ</td><td>upsilon</td><td>ipsilon</td><td>u</td><td>y, v, f (selon contexte)</td></tr>
-	<tr><td>Φ</td><td>φ / ϕ</td><td>phi</td><td>fi</td><td>ph</td><td>f</td><td></td></tr>
-	<tr><td>Χ</td><td>χ</td><td>khi/chi</td><td>chi</td><td colspan = 2>kh, c</td><td></td></tr>
-	<tr><td>Ψ</td><td>ψ</td><td>psi</td><td>psi</td><td colspan = 2>ps</td><td></td></tr>
+	<tr>
+		<td rowspan = 2>Φ</td>
+		<td>φ</td>
+		<td rowspan = 2>phi</td>
+		<td rowspan = 2>fi</td>
+		<td rowspan = 2>ph</td>
+		<td rowspan = 2>f</td>
+	</tr>
+	<tr><td>ϕ</td></tr>
+	<tr><td>Χ</td><td>χ</td><td>khi/chi</td><td>chi</td><td colspan = 2>kh, c</td></tr>
+	<tr><td>Ψ</td><td>ψ</td><td>psi</td><td>psi</td><td colspan = 2>ps</td></tr>
 	<tr><td>Ω</td><td>ω</td><td>oméga</td><td>omega</td><td colspan = 2>ô, o</td></tr>
+</table>
+<table class = table-invisible>
+	<tr>
+		<td>Α</td>
+		<td>Β</td>
+		<td>Γ</td>
+		<td>Δ</td>
+		<td>Ε</td>
+		<td>Ζ</td>
+		<td>Η</td>
+		<td>Θ</td>
+		<td>Ι</td>
+		<td>Κ</td>
+		<td>Λ</td>
+		<td>Μ</td>
+		<td>Ν</td>
+		<td>Ξ</td>
+		<td>Ο</td>
+		<td>Π</td>
+		<td>Ρ</td>
+		<td>Σ</td>
+		<td>Τ</td>
+		<td>Υ</td>
+		<td>Φ</td>
+		<td>Χ</td>
+		<td>Ψ</td>
+		<td>Ω</td>
+	</tr>
+	<tr>
+		<td>α</td>
+		<td>β / ϐ</td>
+		<td>γ</td>
+		<td>δ</td>
+		<td>ε</td>
+		<td>ζ</td>
+		<td>η</td>
+		<td>θ</td>
+		<td>ι</td>
+		<td>κ</td>
+		<td>λ</td>
+		<td>μ</td>
+		<td>ν</td>
+		<td>ξ</td>
+		<td>ο</td>
+		<td>π</td>
+		<td>ρ</td>
+		<td>σ / ς</td>
+		<td>τ</td>
+		<td>υ</td>
+		<td>φ / ϕ</td>
+		<td>χ</td>
+		<td>ψ</td>
+		<td>ω</td>
+	</tr>
 </table>
 <h2>Кириллица</h2>
 <table>
-	<tr><th>Majuscule</th><th>Minuscule</th><th>Nom</th><th>Prononciation</th></tr>
+	<tr><th>Majuscule</th><th>Minuscule</th><th>Nom</th><th>🗣️</th></tr>
 	<tr><td>А</td><td>а</td><td>a</td><td>a</td></tr>
 	<tr><td>Б</td><td>б</td><td>bé</td><td>b</td></tr>
 	<tr><td>В</td><td>в</td><td>vé</td><td>v</td></tr>
-	<tr><td>Г</td><td>г</td><td>gué</td><td>g dur</td></tr>
+	<tr><td>Г</td><td>г</td><td>gué</td><td>gu</td></tr>
 	<tr><td>Д</td><td>д</td><td>dé</td><td>d</td></tr>
-	<tr><td>Е</td><td>е</td><td>ié</td><td>ié</td></tr>
+	<tr><td>Е</td><td>е</td><td>ié</td><td rowspan = 2>ié</td></tr>
+	<tr><td>Є</td><td>є</td><td>ié 🇺🇦</td></tr>
 	<tr><td>Ё</td><td>ё</td><td>io</td><td>io</td></tr>
 	<tr><td>Ж</td><td>ж</td><td>jé</td><td>j</td></tr>
 	<tr><td>З</td><td>з</td><td>zé</td><td>z</td></tr>
+<<<<<<< Updated upstream
 	<tr><td>И</td><td>и</td><td>i</td><td>i</td></tr>
 	<tr><td>Й</td><td>й</td><td>i bref</td><td>ï</td></tr>
 	<tr><td>І</td><td>і</td><td>i 🇧🇾 / 🇺🇦</td><td>i</td></tr>
+=======
+	<tr><td>Ѕ</td><td>ѕ</td><td>dzé 🇲🇰</td><td>dz</td></tr>
+	<tr><td>И</td><td>и</td><td>i</td><td rowspan = 2>i</td></tr>
+	<tr><td>І</td><td>і</td><td>i 🇺🇦 / 🇧🇾</td></tr>
+	<tr><td>Ї</td><td>ї</td><td>yi 🇺🇦</td><td>ille-i</td></tr>
+	<tr><td>Й</td><td>й</td><td>i kratkoïé (court)</td><td>ille</td></tr>
+>>>>>>> Stashed changes
 	<tr><td>К</td><td>к</td><td>ka</td><td>k</td></tr>
 	<tr><td>Л</td><td>л</td><td>elle</td><td>l</td></tr>
 	<tr><td>М</td><td>м</td><td>emme</td><td>m</td></tr>
 	<tr><td>Н</td><td>н</td><td>enne</td><td>n</td></tr>
 	<tr><td>О</td><td>о</td><td>o</td><td>o</td></tr>
 	<tr><td>П</td><td>п</td><td>pé</td><td>p</td></tr>
-	<tr><td>Р</td><td>р</td><td>erre</td><td>r roulé</td></tr>
-	<tr><td>С</td><td>с</td><td>esse</td><td>s dur</td></tr>
+	<tr><td>Р</td><td>р</td><td>erre</td><td>r (roulé)</td></tr>
+	<tr><td>С</td><td>с</td><td>esse</td><td>s</td></tr>
 	<tr><td>Т</td><td>т</td><td>té</td><td>t</td></tr>
-	<tr><td>У</td><td>у</td><td>ou</td><td>ou</td></tr>
+	<tr><td>У</td><td>у</td><td>ou</td><td rowspan = 2>ou</td></tr>
+	<tr><td>Ѹ</td><td>ѹ</td><td>ouk</td></tr>
 	<tr><td>Ф</td><td>ф</td><td>effe</td><td>f</td></tr>
 	<tr><td>Х</td><td>х</td><td>kha</td><td>rh</td></tr>
 	<tr><td>Ц</td><td>ц</td><td>tsé</td><td>ts</td></tr>
 	<tr><td>Ч</td><td>ч</td><td>tché</td><td>tch</td></tr>
 	<tr><td>Ш</td><td>ш</td><td>cha</td><td>ch</td></tr>
 	<tr><td>Щ</td><td>щ</td><td>chtcha</td><td>chtch</td></tr>
-	<tr><td>Ъ</td><td>ъ</td><td>signe dur</td><td>muet</td></tr>
-	<tr><td>Ы</td><td>ы</td><td>yérou</td><td>i tendu</td></tr>
-	<tr><td>Ь</td><td>ь</td><td>signe mou</td><td>y mouillure</td></tr>
-	<tr><td>Э</td><td>э</td><td>é</td><td>è</td></tr>
+	<tr><td>Ъ</td><td>ъ</td><td>(signe dur)</td><td>muet</td></tr>
+	<tr><td>Ы</td><td>ы</td><td>yérou</td><td>°u</td></tr>
+	<tr><td>Ь</td><td>ь</td><td>(signe mou)</td><td>ille (mouillure)</td></tr>
+	<tr><td>Э</td><td>э</td><td>è</td><td>è</td></tr>
 	<tr><td>Ю</td><td>ю</td><td>iou</td><td>iou</td></tr>
 	<tr><td>Я</td><td>я</td><td>ia</td><td>ia</td></tr>
-	<tr><td>Ѣ</td><td>ѣ</td><td>iat'</td><td>iè</td></tr>
-	<tr><td>Ѳ</td><td>ѳ</td><td>fita</td><td>ḟ</td></tr>
-	<tr><td>Ѵ</td><td>ѵ</td><td>ijitsa</td><td>i</td></tr>
 </table>
+<table class = table-invisible>
+	<tr>
+		<td>А</td><td>Б</td><td>В</td><td>Г</td><td>Д</td><td>Е</td><td>Є</td><td>Ё</td><td>Ж</td><td>З</td><td>Ѕ</td><td>И</td><td>І</td><td>Ї</td><td>Й</td><td>К</td><td>Л</td><td>М</td><td>Н</td><td>О</td><td>П</td><td>Р</td><td>С</td><td>Т</td><td>У</td><td>Ѹ</td><td>Ф</td><td>Х</td><td>Ц</td><td>Ч</td><td>Ш</td><td>Щ</td><td>Ъ</td><td>Ы</td><td>Ь</td><td>Э</td><td>Ю</td><td>Я</td>
+	</tr>
+	<tr>
+		<td>а</td><td>б</td><td>в</td><td>г</td><td>д</td><td>е</td><td>є</td><td>ё</td><td>ж</td><td>з</td><td>ѕ</td><td>и</td><td>і</td><td>ї</td><td>й</td><td>к</td><td>л</td><td>м</td><td>н</td><td>о</td><td>п</td><td>р</td><td>с</td><td>т</td><td>у</td><td>ѹ</td><td>ф</td><td>х</td><td>ц</td><td>ч</td><td>ш</td><td>щ</td><td>ъ</td><td>ы</td><td>ь</td><td>э</td><td>ю</td><td>я</td>
+	</tr>
+</table>
+
 
 <!-- ============================================================================================================== -->
 <!--                                                                                                                -->
