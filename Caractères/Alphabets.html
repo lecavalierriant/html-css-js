@@ -15,61 +15,258 @@
 </head>
 <iframe src = Caractères.html></iframe>
 <h1>Alphabets</h1>
+
+Police :
+<select id = polices>
+	<optgroup label = "Avec empattement (serif)">
+		<option value = "Cambria">Cambria</option>
+		<option value = "Constantia">Constantia</option>
+		<option value = "Garamond">Garamond</option>
+		<option value = "Georgia">Georgia</option>
+		<option value = "Lucida Bright">Lucida Bright</option>
+		<option value = "MS Serif">MS Serif</option>
+		<option value = "Century Schoolbook">Century Schoolbook</option>
+		<option value = "Book Antiqua">Book Antiqua</option>
+		<option value = "Rockwell">Rockwell</option>
+		<option value = "Times New Roman">Times New Roman</option>
+	</optgroup>
+	<optgroup label = "Linéales (sans-serif)">
+		<option value = "Arial">Arial</option>
+		<option value = "Calibri">Calibri</option>
+		<option value = "Century Gothic">Century Gothic</option>
+		<option value = "Corbel">Corbel</option>
+		<option value = "Franklin Gothic">Franklin Gothic</option>
+		<option value = "Haettenschweiler">Haettenschweiler</option>
+		<option value = "Helvetica">Helvetica</option>
+		<option value = "Impact">Impact</option>
+		<option value = "Lucida Sans">Lucida Sans</option>
+		<option value = "MS Sans Serif">MS Sans Serif</option>
+		<option value = "Segoe UI">Segoe UI</option>
+		<option value = "Tahoma">Tahoma</option>
+		<option value = "Trebuchet MS">Trebuchet MS</option>
+		<option value = "Verdana">Verdana</option>
+	</optgroup>
+	<optgroup label = "À chasse fixe">
+		<option value = "Consolas">Consolas</option>
+		<option value = "Courier">Courier</option>
+		<option value = "Courier New">Courier New</option>
+		<option value = "Lucida Console">Lucida Console</option>
+		<option value = "Monospace">Monospace</option>
+		<option value = "MS Gothic">MS Gothic</option>
+		<option value = "Ubuntu Mono">Ubuntu Mono</option>
+	</optgroup>
+	<optgroup label = "Manuscrite">
+		<option value = "Comic Sans MS">Comic Sans MS</option>
+		<option value = "Freestyle Script">Freestyle Script</option>
+		<option value = "Lucida Handwriting">Lucida Handwriting</option>
+	</optgroup>
+	<optgroup label = "Non latines">
+		<option value = "SimSun">SimSun</option>
+	</optgroup>
+	<optgroup label = "Dingbats / Caractères des symboles">
+		<option value = "Symbol">Symbol</option>
+		<option value = "Wingdings">Wingdings</option>
+		<option value = "Webdings">Webdings</option>
+	</optgroup>
+	<optgroup label = "Divers">
+		<option value = "Cooper Black">Cooper Black</option>
+		<option value = "Jokerman">Jokerman</option>
+	</optgroup>
+</select>
 <h2>Αλφάβητο</h2>
-<table>
+<table id = table-caractères>
 	<tr>
-		<th>Majuscule</th>
-		<th>Minuscule</th>
-		<th>Nom ancien</th>
-		<th>Nom moderne</th>
-		<th>🗣️ ancienne</th>
-		<th>🗣️ moderne</th>
+		<th>⬆</th>
+		<th>⬇</th>
+		<th>Nom 📜</th>
+		<th>Nom 💻</th>
+		<th>🗣️ 📜</th>
+		<th>🗣️ 💻</th>
 	</tr>
-	<tr><td>Α</td><td>α</td><td>alpha</td><td>alfa</td><td colspan = 2>a</td></tr>
 	<tr>
-		<td rowspan = 2>Β</td>
-		<td>β</td>
+		<td onclick = copier(this)>Α</td>
+		<td onclick = copier(this)>α</td>
+		<td>alpha</td>
+		<td>alfa</td>
+		<td colspan = 2>a</td>
+	</tr>
+	<tr>
+		<td rowspan = 2 onclick = copier(this)>Β</td>
+		<td onclick = copier(this)>β</td>
 		<td rowspan = 2>bêta</td>
 		<td rowspan = 2>vita</td>
 		<td rowspan = 2>b</td>
 		<td rowspan = 2>v</td>
 	</tr>
-	<tr><td>ϐ</td></tr>
-	<tr><td>Γ</td><td>γ</td><td>gamma</td><td>gama</td><td colspan = 2>gu</td></tr>
-	<tr><td>Δ</td><td>δ</td><td>delta</td><td>delta</td><td>d</td><td>parfois dh</td></tr>
-	<tr><td>Ε</td><td>ε</td><td>epsilon</td><td>epsilon</td><td colspan = 2>e</td></tr>
-	<tr><td>Ζ</td><td>ζ</td><td>zêta</td><td>zita</td><td>dz, z</td><td>z</td></tr>
-	<tr><td>Η</td><td>η</td><td>êta</td><td>ita</td><td>ê</td><td>i</td></tr>
-	<tr><td>Θ</td><td>θ</td><td>thêta</td><td>thita</td><td colspan = 2>th</td></tr>
-	<tr><td>Ι</td><td>ι</td><td>iota</td><td>iota</td><td>i</td><td>j</td></tr>
-	<tr><td>Κ</td><td>κ</td><td>kappa</td><td>kapa</td><td colspan = 2>k</td></tr>
-	<tr><td>Λ</td><td>λ</td><td>lambda</td><td>lamda</td><td colspan = 2>l</td></tr>
-	<tr><td>Μ</td><td>μ</td><td>mu</td><td>mi</td><td colspan = 2>m</td></tr>
-	<tr><td>Ν</td><td>ν</td><td>nu</td><td>ni</td><td colspan = 2>n</td></tr>
-	<tr><td>Ξ</td><td>ξ</td><td>ksi/xi</td><td>xi</td><td colspan = 2>ks, x</td></tr>
-	<tr><td>Ο</td><td>ο</td><td>omicron</td><td>omikron</td><td colspan = 2>o</td></tr>
-	<tr><td>Π</td><td>π</td><td>pi</td><td>pi</td><td colspan = 2>p</td></tr>
-	<tr><td>Ρ</td><td>ρ</td><td>rhô</td><td>ro</td><td colspan = 2>r</td></tr>
-	<tr><td>Σ</td><td>σ / ς</td><td>sigma</td><td>sigma</td><td colspan = 2>s</td></tr>
-	<tr><td>Τ</td><td>τ</td><td>tau</td><td>taf</td><td colspan = 2>t</td></tr>
-	<tr><td>Υ</td><td>υ</td><td>upsilon</td><td>ipsilon</td><td>u</td><td>y, v, f (selon contexte)</td></tr>
+	<tr><td onclick = copier(this)>ϐ</td></tr>
 	<tr>
-		<td rowspan = 2>Φ</td>
-		<td>φ</td>
+		<td onclick = copier(this)>Γ</td>
+		<td onclick = copier(this)>γ</td>
+		<td>gamma</td>
+		<td>gama</td>
+		<td colspan = 2>gu</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Δ</td>
+		<td onclick = copier(this)>δ</td>
+		<td>delta</td>
+		<td>delta</td>
+		<td colspan = 2>d</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Ε</td>
+		<td onclick = copier(this)>ε</td>
+		<td>epsilon</td>
+		<td>epsilon</td>
+		<td colspan = 2>e</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Ζ</td>
+		<td onclick = copier(this)>ζ</td>
+		<td>zêta</td>
+		<td>zita</td>
+		<td>dz, z</td>
+		<td>z</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Η</td>
+		<td onclick = copier(this)>η</td>
+		<td>êta</td>
+		<td>ita</td>
+		<td>ê</td>
+		<td>i</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Θ</td>
+		<td onclick = copier(this)>θ</td>
+		<td>thêta</td>
+		<td>thita</td>
+		<td colspan = 2>th</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Ι</td>
+		<td onclick = copier(this)>ι</td>
+		<td>iota</td>
+		<td>iota</td>
+		<td>i</td>
+		<td>j</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Κ</td>
+		<td onclick = copier(this)>κ</td>
+		<td>kappa</td>
+		<td>kapa</td>
+		<td colspan = 2>k</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Λ</td>
+		<td onclick = copier(this)>λ</td>
+		<td>lambda</td>
+		<td>lamda</td>
+		<td colspan = 2>l</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Μ</td>
+		<td onclick = copier(this)>μ</td>
+		<td>mu</td>
+		<td>mi</td>
+		<td colspan = 2>m</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Ν</td>
+		<td onclick = copier(this)>ν</td>
+		<td>nu</td>
+		<td>ni</td>
+		<td colspan = 2>n</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Ξ</td>
+		<td onclick = copier(this)>ξ</td>
+		<td>ksi/xi</td>
+		<td>xi</td>
+		<td colspan = 2>ks, x</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Ο</td>
+		<td onclick = copier(this)>ο</td>
+		<td>omicron</td>
+		<td>omikron</td>
+		<td colspan = 2>o</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Π</td>
+		<td onclick = copier(this)>π</td>
+		<td>pi</td>
+		<td>pi</td>
+		<td colspan = 2>p</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Ρ</td>
+		<td onclick = copier(this)>ρ</td>
+		<td>rhô</td>
+		<td>ro</td>
+		<td colspan = 2>r</td>
+	</tr>
+	<tr>
+		<td rowspan = 2 onclick = copier(this)>Σ</td>
+		<td onclick = copier(this)>σ</td>
+		<td rowspan = 2>sigma</td>
+		<td rowspan = 2>sigma</td>
+		<td rowspan = 2 colspan = 2>s</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>ς</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Τ</td>
+		<td onclick = copier(this)>τ</td>
+		<td>tau</td>
+		<td>taf</td>
+		<td colspan = 2>t</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Υ</td>
+		<td onclick = copier(this)>υ</td>
+		<td>upsilon</td>
+		<td>ipsilon</td>
+		<td>u</td>
+		<td>y, v, f</td>
+	</tr>
+	<tr>
+		<td rowspan = 2 onclick = copier(this)>Φ</td>
+		<td onclick = copier(this)>φ</td>
 		<td rowspan = 2>phi</td>
 		<td rowspan = 2>fi</td>
 		<td rowspan = 2>ph</td>
 		<td rowspan = 2>f</td>
 	</tr>
-	<tr><td>ϕ</td></tr>
-	<tr><td>Χ</td><td>χ</td><td>khi/chi</td><td>chi</td><td colspan = 2>kh, c</td></tr>
-	<tr><td>Ψ</td><td>ψ</td><td>psi</td><td>psi</td><td colspan = 2>ps</td></tr>
-	<tr><td>Ω</td><td>ω</td><td>oméga</td><td>omega</td><td colspan = 2>ô, o</td></tr>
+	<tr><td onclick = copier(this)>ϕ</td></tr>
+	<tr>
+		<td onclick = copier(this)>Χ</td>
+		<td onclick = copier(this)>χ</td>
+		<td>khi/chi</td>
+		<td>chi</td>
+		<td colspan = 2>kh, c</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Ψ</td>
+		<td onclick = copier(this)>ψ</td>
+		<td>psi</td>
+		<td>psi</td>
+		<td colspan = 2>ps</td>
+	</tr>
+	<tr>
+		<td onclick = copier(this)>Ω</td>
+		<td onclick = copier(this)>ω</td>
+		<td>oméga</td>
+		<td>omega</td>
+		<td colspan = 2>o</td>
+	</tr>
 </table>
 <table class = table-invisible>
 	<tr>
 		<td>Α</td>
-		<td>Β</td>
+		<td colspan = 2>Β</td>
 		<td>Γ</td>
 		<td>Δ</td>
 		<td>Ε</td>
@@ -85,17 +282,18 @@
 		<td>Ο</td>
 		<td>Π</td>
 		<td>Ρ</td>
-		<td>Σ</td>
+		<td colspan = 2>Σ</td>
 		<td>Τ</td>
 		<td>Υ</td>
-		<td>Φ</td>
+		<td colspan = 2>Φ</td>
 		<td>Χ</td>
 		<td>Ψ</td>
 		<td>Ω</td>
 	</tr>
 	<tr>
 		<td>α</td>
-		<td>β / ϐ</td>
+		<td>β</td>
+		<td>ϐ</td>
 		<td>γ</td>
 		<td>δ</td>
 		<td>ε</td>
@@ -111,10 +309,12 @@
 		<td>ο</td>
 		<td>π</td>
 		<td>ρ</td>
-		<td>σ / ς</td>
+		<td>σ</td>
+		<td>ς</td>
 		<td>τ</td>
 		<td>υ</td>
-		<td>φ / ϕ</td>
+		<td>φ</td>
+		<td>ϕ</td>
 		<td>χ</td>
 		<td>ψ</td>
 		<td>ω</td>
@@ -122,45 +322,45 @@
 </table>
 <h2>Кириллица</h2>
 <table>
-	<tr><th>Majuscule</th><th>Minuscule</th><th>Nom</th><th>🗣️</th></tr>
-	<tr><td>А</td><td>а</td><td>a</td><td>a</td></tr>
-	<tr><td>Б</td><td>б</td><td>bé</td><td>b</td></tr>
-	<tr><td>В</td><td>в</td><td>vé</td><td>v</td></tr>
-	<tr><td>Г</td><td>г</td><td>gé</td><td>gu</td></tr>
-	<tr><td>Д</td><td>д</td><td>dé</td><td>d</td></tr>
-	<tr><td>Е</td><td>е</td><td>ié</td><td rowspan = 2>ié</td></tr>
-	<tr><td>Є</td><td>є</td><td>ié 🇺🇦</td></tr>
-	<tr><td>Ё</td><td>ё</td><td>io</td><td>io</td></tr>
-	<tr><td>Ж</td><td>ж</td><td>jé</td><td>j</td></tr>
-	<tr><td>З</td><td>з</td><td>zé</td><td>z</td></tr>
-	<tr><td>Ѕ</td><td>ѕ</td><td>dzé 🇲🇰</td><td>dz</td></tr>
-	<tr><td>И</td><td>и</td><td>i</td><td rowspan = 2>i</td></tr>
-	<tr><td>І</td><td>і</td><td>i 🇺🇦 / 🇧🇾</td></tr>
-	<tr><td>Ї</td><td>ї</td><td>yi 🇺🇦</td><td>ille-i</td></tr>
-	<tr><td>Й</td><td>й</td><td>i kratkoïé (court)</td><td>ille</td></tr>
-	<tr><td>К</td><td>к</td><td>ka</td><td>k</td></tr>
-	<tr><td>Л</td><td>л</td><td>elle</td><td>l</td></tr>
-	<tr><td>М</td><td>м</td><td>emme</td><td>m</td></tr>
-	<tr><td>Н</td><td>н</td><td>enne</td><td>n</td></tr>
-	<tr><td>О</td><td>о</td><td>o</td><td>o</td></tr>
-	<tr><td>П</td><td>п</td><td>pé</td><td>p</td></tr>
-	<tr><td>Р</td><td>р</td><td>erre</td><td>r (roulé)</td></tr>
-	<tr><td>С</td><td>с</td><td>esse</td><td>s</td></tr>
-	<tr><td>Т</td><td>т</td><td>té</td><td>t</td></tr>
-	<tr><td>У</td><td>у</td><td>ou</td><td rowspan = 2>ou</td></tr>
-	<tr><td>Ѹ</td><td>ѹ</td><td>ouk</td></tr>
-	<tr><td>Ф</td><td>ф</td><td>effe</td><td>f</td></tr>
-	<tr><td>Х</td><td>х</td><td>kha</td><td>rh</td></tr>
-	<tr><td>Ц</td><td>ц</td><td>tsé</td><td>ts</td></tr>
-	<tr><td>Ч</td><td>ч</td><td>tché</td><td>tch</td></tr>
-	<tr><td>Ш</td><td>ш</td><td>cha</td><td>ch</td></tr>
-	<tr><td>Щ</td><td>щ</td><td>chtcha</td><td>chtch</td></tr>
-	<tr><td>Ъ</td><td>ъ</td><td>(signe dur)</td><td>muet</td></tr>
-	<tr><td>Ы</td><td>ы</td><td>yérou</td><td>°u</td></tr>
-	<tr><td>Ь</td><td>ь</td><td>(signe mou)</td><td>ille (mouillure)</td></tr>
-	<tr><td>Э</td><td>э</td><td>è</td><td>è</td></tr>
-	<tr><td>Ю</td><td>ю</td><td>yu</td><td>iou</td></tr>
-	<tr><td>Я</td><td>я</td><td>ya</td><td>ia</td></tr>
+	<tr><th>⬆</th><th>⬇</th><th>Nom</th><th>🗣️</th></tr>
+	<tr><td onclick = copier(this)>А</td><td onclick = copier(this)>а</td><td>a</td><td>a</td></tr>
+	<tr><td onclick = copier(this)>Б</td><td onclick = copier(this)>б</td><td>bé</td><td>b</td></tr>
+	<tr><td onclick = copier(this)>В</td><td onclick = copier(this)>в</td><td>vé</td><td>v</td></tr>
+	<tr><td onclick = copier(this)>Г</td><td onclick = copier(this)>г</td><td>gé</td><td>gu</td></tr>
+	<tr><td onclick = copier(this)>Д</td><td onclick = copier(this)>д</td><td>dé</td><td>d</td></tr>
+	<tr><td onclick = copier(this)>Е</td><td onclick = copier(this)>е</td><td>ié</td><td rowspan = 2>ié</td></tr>
+	<tr><td onclick = copier(this)>Є</td><td onclick = copier(this)>є</td><td>ié 🇺🇦</td>
+	</tr><tr><td onclick = copier(this)>Ё</td><td onclick = copier(this)>ё</td><td>io</td><td>io</td></tr>
+	<tr><td onclick = copier(this)>Ж</td><td onclick = copier(this)>ж</td><td>jé</td><td>j</td></tr>
+	<tr><td onclick = copier(this)>З</td><td onclick = copier(this)>з</td><td>zé</td><td>z</td></tr>
+	<tr><td onclick = copier(this)>Ѕ</td><td onclick = copier(this)>ѕ</td><td>dzé 🇲🇰</td><td>dz</td></tr>
+	<tr><td onclick = copier(this)>И</td><td onclick = copier(this)>и</td><td>i</td><td rowspan = 2>i</td></tr>
+	<tr><td onclick = copier(this)>І</td><td onclick = copier(this)>і</td><td>i 🇺🇦 / 🇧🇾</td></tr>
+	<tr><td onclick = copier(this)>Ї</td><td onclick = copier(this)>ї</td><td>yi 🇺🇦</td><td>ille-i</td></tr>
+	<tr><td onclick = copier(this)>Й</td><td onclick = copier(this)>й</td><td>i kratkoïé</td><td>ille</td></tr>
+	<tr><td onclick = copier(this)>К</td><td onclick = copier(this)>к</td><td>ka</td><td>k</td></tr>
+	<tr><td onclick = copier(this)>Л</td><td onclick = copier(this)>л</td><td>elle</td><td>l</td></tr>
+	<tr><td onclick = copier(this)>М</td><td onclick = copier(this)>м</td><td>emme</td><td>m</td></tr>
+	<tr><td onclick = copier(this)>Н</td><td onclick = copier(this)>н</td><td>enne</td><td>n</td></tr>
+	<tr><td onclick = copier(this)>О</td><td onclick = copier(this)>о</td><td>o</td><td>o</td></tr>
+	<tr><td onclick = copier(this)>П</td><td onclick = copier(this)>п</td><td>pé</td><td>p</td></tr>
+	<tr><td onclick = copier(this)>Р</td><td onclick = copier(this)>р</td><td>erre</td><td>rr</td></tr>
+	<tr><td onclick = copier(this)>С</td><td onclick = copier(this)>с</td><td>esse</td><td>s</td></tr>
+	<tr><td onclick = copier(this)>Т</td><td onclick = copier(this)>т</td><td>té</td><td>t</td></tr>
+	<tr><td onclick = copier(this)>У</td><td onclick = copier(this)>у</td><td>ou</td><td rowspan = 2>ou</td></tr>
+	<tr><td onclick = copier(this)>Ѹ</td><td onclick = copier(this)>ѹ</td><td>ouk</td></tr>
+	<tr><td onclick = copier(this)>Ф</td><td onclick = copier(this)>ф</td><td>effe</td><td>f</td></tr>
+	<tr><td onclick = copier(this)>Х</td><td onclick = copier(this)>х</td><td>kha</td><td>rh</td></tr>
+	<tr><td onclick = copier(this)>Ц</td><td onclick = copier(this)>ц</td><td>tsé</td><td>ts</td></tr>
+	<tr><td onclick = copier(this)>Ч</td><td onclick = copier(this)>ч</td><td>tché</td><td>tch</td></tr>
+	<tr><td onclick = copier(this)>Ш</td><td onclick = copier(this)>ш</td><td>cha</td><td>ch</td></tr>
+	<tr><td onclick = copier(this)>Щ</td><td onclick = copier(this)>щ</td><td>chtcha</td><td>chtch</td></tr>
+	<tr><td onclick = copier(this)>Ъ</td><td onclick = copier(this)>ъ</td><td>tviórdy znak</td><td>muet</td></tr>
+	<tr><td onclick = copier(this)>Ы</td><td onclick = copier(this)>ы</td><td>yérou</td><td>°u</td></tr>
+	<tr><td onclick = copier(this)>Ь</td><td onclick = copier(this)>ь</td><td>miagki znak</td><td>ille</td></tr>
+	<tr><td onclick = copier(this)>Э</td><td onclick = copier(this)>э</td><td>è</td><td>è</td></tr>
+	<tr><td onclick = copier(this)>Ю</td><td onclick = copier(this)>ю</td><td>yu</td><td>iou</td></tr>
+	<tr><td onclick = copier(this)>Я</td><td onclick = copier(this)>я</td><td>ya</td><td>ia</td></tr>
 </table>
 <table class = table-invisible>
 	<tr>
@@ -246,35 +446,35 @@
 </table>
 <h2>ٱلْـعَـرَبِـيَّـة</h2>
 <table>
-	<tr><th>🗣️</th><th>Nom</th><th>Finale</th><th>Médiane</th><th>Initiale</th><th>Isolée</th></tr>
-	<tr><td>a</td><td>alif</td><td>ــا</td><td>ــاــ</td><td>اــ</td><td>ا</td></tr>
-	<tr><td>b</td><td>ba</td><td>ــب</td><td>ــبــ</td><td>بــ</td><td>ب</td></tr>
-	<tr><td>t</td><td>ta</td><td>ــت</td><td>ــتــ</td><td>تــ</td><td>ت</td></tr>
-	<tr><td>th</td><td>tha</td><td>ــث</td><td>ــثــ</td><td>ثــ</td><td>ث</td></tr>
-	<tr><td>dj</td><td>jim</td><td>ــج</td><td>ــجــ</td><td>جــ</td><td>ج</td></tr>
-	<tr><td>h</td><td>ha</td><td>ــح</td><td>ــحــ</td><td>حــ</td><td>ح</td></tr>
-	<tr><td>kh</td><td>kha</td><td>ــخ</td><td>ــخــ</td><td>خــ</td><td>خ</td></tr>
-	<tr><td>d</td><td>dal</td><td>ــد</td><td>ــدــ</td><td>دــ</td><td>د</td></tr>
-	<tr><td>dh</td><td>dhal</td><td>ــذ</td><td>ــذــ</td><td>ذــ</td><td>ذ</td></tr>
-	<tr><td>r</td><td>ra</td><td>ــر</td><td>ــرــ</td><td>رــ</td><td>ر</td></tr>
-	<tr><td>z</td><td>zay</td><td>ــز</td><td>ــزــ</td><td>زــ</td><td>ز</td></tr>
-	<tr><td>s</td><td>sin</td><td>ــس</td><td>ــســ</td><td>ســ</td><td>س</td></tr>
-	<tr><td>sh</td><td>shin</td><td>ــش</td><td>ــشــ</td><td>شــ</td><td>ش</td></tr>
-	<tr><td>s</td><td>sad</td><td>ــص</td><td>ــصــ</td><td>صــ</td><td>ص</td></tr>
-	<tr><td>d</td><td>dad</td><td>ــض</td><td>ــضــ</td><td>ضــ</td><td>ض</td></tr>
-	<tr><td>t</td><td>ta</td><td>ــط</td><td>ــطــ</td><td>طــ</td><td>ط</td></tr>
-	<tr><td>z</td><td>za</td><td>ــظ</td><td>ــظــ</td><td>ظــ</td><td>ظ</td></tr>
-	<tr><td>hw</td><td>ayn</td><td>ــع</td><td>ــعــ</td><td>عــ</td><td>ع</td></tr>
-	<tr><td>gh</td><td>rhayn</td><td>ــغ</td><td>ــغــ</td><td>غــ</td><td>غ</td></tr>
-	<tr><td>f</td><td>fa</td><td>ــف</td><td>ــفــ</td><td>فــ</td><td>ف</td></tr>
-	<tr><td>kw</td><td>qaf</td><td>ــق</td><td>ــقــ</td><td>قــ</td><td>ق</td></tr>
-	<tr><td>k</td><td>kaf</td><td>ــك</td><td>ــكــ</td><td>كــ</td><td>ك</td></tr>
-	<tr><td>l</td><td>lam</td><td>ــل</td><td>ــلــ</td><td>لــ</td><td>ل</td></tr>
-	<tr><td>m</td><td>mim</td><td>ــم</td><td>ــمــ</td><td>مــ</td><td>م</td></tr>
-	<tr><td>n</td><td>nun</td><td>ــن</td><td>ــنــ</td><td>نــ</td><td>ن</td></tr>
-	<tr><td>h</td><td>ha</td><td>ــه</td><td>ــهــ</td><td>هــ</td><td>ه</td></tr>
-	<tr><td>w</td><td>waw</td><td>ــو</td><td>ــوــ</td><td>وــ</td><td>و</td></tr>
-	<tr><td>y</td><td>ya</td><td>ــي</td><td>ــيــ</td><td>يــ</td><td>ي</td></tr>
+	<tr><th>🗣️</th><th>Nom</th><th>⬅</th><th>⬌</th><th>➡</th><th>Isolée</th></tr>
+	<tr><td>a</td><td>alif</td><td>ــا</td><td>ــاــ</td><td>اــ</td><td onclick = copier(this)>ا</td></tr>
+	<tr><td>b</td><td>ba</td><td>ــب</td><td>ــبــ</td><td>بــ</td><td onclick = copier(this)>ب</td></tr>
+	<tr><td>t</td><td>ta</td><td>ــت</td><td>ــتــ</td><td>تــ</td><td onclick = copier(this)>ت</td></tr>
+	<tr><td>th</td><td>tha</td><td>ــث</td><td>ــثــ</td><td>ثــ</td><td onclick = copier(this)>ث</td></tr>
+	<tr><td>dj</td><td>jim</td><td>ــج</td><td>ــجــ</td><td>جــ</td><td onclick = copier(this)>ج</td></tr>
+	<tr><td>h</td><td>ha</td><td>ــح</td><td>ــحــ</td><td>حــ</td><td onclick = copier(this)>ح</td></tr>
+	<tr><td>kh</td><td>kha</td><td>ــخ</td><td>ــخــ</td><td>خــ</td><td onclick = copier(this)>خ</td></tr>
+	<tr><td>d</td><td>dal</td><td>ــد</td><td>ــدــ</td><td>دــ</td><td onclick = copier(this)>د</td></tr>
+	<tr><td>dh</td><td>dhal</td><td>ــذ</td><td>ــذــ</td><td>ذــ</td><td onclick = copier(this)>ذ</td></tr>
+	<tr><td>r</td><td>ra</td><td>ــر</td><td>ــرــ</td><td>رــ</td><td onclick = copier(this)>ر</td></tr>
+	<tr><td>z</td><td>zay</td><td>ــز</td><td>ــزــ</td><td>زــ</td><td onclick = copier(this)>ز</td></tr>
+	<tr><td>s</td><td>sin</td><td>ــس</td><td>ــســ</td><td>ســ</td><td onclick = copier(this)>س</td></tr>
+	<tr><td>sh</td><td>shin</td><td>ــش</td><td>ــشــ</td><td>شــ</td><td onclick = copier(this)>ش</td></tr>
+	<tr><td>s</td><td>sad</td><td>ــص</td><td>ــصــ</td><td>صــ</td><td onclick = copier(this)>ص</td></tr>
+	<tr><td>d</td><td>dad</td><td>ــض</td><td>ــضــ</td><td>ضــ</td><td onclick = copier(this)>ض</td></tr>
+	<tr><td>t</td><td>ta</td><td>ــط</td><td>ــطــ</td><td>طــ</td><td onclick = copier(this)>ط</td></tr>
+	<tr><td>z</td><td>za</td><td>ــظ</td><td>ــظــ</td><td>ظــ</td><td onclick = copier(this)>ظ</td></tr>
+	<tr><td>hw</td><td>ayn</td><td>ــع</td><td>ــعــ</td><td>عــ</td><td onclick = copier(this)>ع</td></tr>
+	<tr><td>gh</td><td>rhayn</td><td>ــغ</td><td>ــغــ</td><td>غــ</td><td onclick = copier(this)>غ</td></tr>
+	<tr><td>f</td><td>fa</td><td>ــف</td><td>ــفــ</td><td>فــ</td><td onclick = copier(this)>ف</td></tr>
+	<tr><td>kw</td><td>qaf</td><td>ــق</td><td>ــقــ</td><td>قــ</td><td onclick = copier(this)>ق</td></tr>
+	<tr><td>k</td><td>kaf</td><td>ــك</td><td>ــكــ</td><td>كــ</td><td onclick = copier(this)>ك</td></tr>
+	<tr><td>l</td><td>lam</td><td>ــل</td><td>ــلــ</td><td>لــ</td><td onclick = copier(this)>ل</td></tr>
+	<tr><td>m</td><td>mim</td><td>ــم</td><td>ــمــ</td><td>مــ</td><td onclick = copier(this)>م</td></tr>
+	<tr><td>n</td><td>nun</td><td>ــن</td><td>ــنــ</td><td>نــ</td><td onclick = copier(this)>ن</td></tr>
+	<tr><td>h</td><td>ha</td><td>ــه</td><td>ــهــ</td><td>هــ</td><td onclick = copier(this)>ه</td></tr>
+	<tr><td>w</td><td>waw</td><td>ــو</td><td>ــوــ</td><td>وــ</td><td onclick = copier(this)>و</td></tr>
+	<tr><td>y</td><td>ya</td><td>ــي</td><td>ــيــ</td><td>يــ</td><td onclick = copier(this)>ي</td></tr>
 </table>
 <table class = table-invisible>
 	<tr>
@@ -400,29 +600,29 @@
 </table>
 <h2>עִברִית</h2>
 <table>
-	<tr><th>🗣️ moderne</th><th>🗣️ ancienne</th><th>Nom moderne</th><th>Nom ancien</th><th>Lettre</th></tr>
-	<tr><td>a</td><td>a</td><td>alef</td><td>aleph</td><td>א</td></tr>
-	<tr><td>v</td><td>b</td><td>bet</td><td>bet</td><td>ב</td></tr>
-	<tr><td>g</td><td>g</td><td>gimel</td><td>gimel</td><td>ג</td></tr>
-	<tr><td>d</td><td>d</td><td>dalet</td><td>daleth</td><td>ד</td></tr>
-	<tr><td>h</td><td>h</td><td>he</td><td>he</td><td>ה</td></tr>
-	<tr><td>v</td><td>w</td><td>vav</td><td>vav</td><td>ו</td></tr>
-	<tr><td>z</td><td>z</td><td>zayin</td><td>zayin</td><td>ז</td></tr>
-	<tr><td>r</td><td>h</td><td>chet</td><td>het</td><td>ח</td></tr>
-	<tr><td>t</td><td>t</td><td>tet</td><td>tet</td><td>ט</td></tr>
-	<tr><td>y</td><td>y</td><td>yod</td><td>yod</td><td>י</td></tr>
-	<tr><td>kh</td><td>k</td><td>kaf</td><td>kaph</td><td>כ</td></tr>
-	<tr><td>l</td><td>l</td><td>lamed</td><td>lamed</td><td>ל</td></tr>
-	<tr><td>m</td><td>m</td><td>mem</td><td>mem</td><td>מ</td></tr>
-	<tr><td>n</td><td>n</td><td>nun</td><td>nun</td><td>נ</td></tr>
-	<tr><td>s</td><td>s</td><td>samekh</td><td>samekh</td><td>ס</td></tr>
-	<tr><td>a</td><td>a</td><td>ayin</td><td>ayin</td><td>ע</td></tr>
-	<tr><td>f</td><td>p</td><td>pe</td><td>pe</td><td>פ</td></tr>
-	<tr><td>ts</td><td>s</td><td>tsade</td><td>tsade</td><td>צ</td></tr>
-	<tr><td>k</td><td>k</td><td>qof</td><td>qoph</td><td>ק</td></tr>
-	<tr><td>r</td><td>r</td><td>resh</td><td>resh</td><td>ר</td></tr>
-	<tr><td>sh</td><td>sh</td><td>shin</td><td>shin</td><td>ש</td></tr>
-	<tr><td>t</td><td>t</td><td>tav</td><td>taw</td><td>ת</td></tr>
+	<tr><th>🗣️ 💻</th><th>🗣️ 📜</th><th>Nom 💻</th><th>Nom 📜</th><th>Lettre</th></tr>
+	<tr><td>a</td><td>a</td><td>alef</td><td>aleph</td><td onclick = copier(this)>א</td></tr>
+	<tr><td>v</td><td>b</td><td>bet</td><td>bet</td><td onclick = copier(this)>ב</td></tr>
+	<tr><td>g</td><td>g</td><td>gimel</td><td>gimel</td><td onclick = copier(this)>ג</td></tr>
+	<tr><td>d</td><td>d</td><td>dalet</td><td>daleth</td><td onclick = copier(this)>ד</td></tr>
+	<tr><td>h</td><td>h</td><td>he</td><td>he</td><td onclick = copier(this)>ה</td></tr>
+	<tr><td>v</td><td>w</td><td>vav</td><td>vav</td><td onclick = copier(this)>ו</td></tr>
+	<tr><td>z</td><td>z</td><td>zayin</td><td>zayin</td><td onclick = copier(this)>ז</td></tr>
+	<tr><td>r</td><td>h</td><td>chet</td><td>het</td><td onclick = copier(this)>ח</td></tr>
+	<tr><td>t</td><td>t</td><td>tet</td><td>tet</td><td onclick = copier(this)>ט</td></tr>
+	<tr><td>y</td><td>y</td><td>yod</td><td>yod</td><td onclick = copier(this)>י</td></tr>
+	<tr><td>kh</td><td>k</td><td>kaf</td><td>kaph</td><td onclick = copier(this)>כ</td></tr>
+	<tr><td>l</td><td>l</td><td>lamed</td><td>lamed</td><td onclick = copier(this)>ל</td></tr>
+	<tr><td>m</td><td>m</td><td>mem</td><td>mem</td><td onclick = copier(this)>מ</td></tr>
+	<tr><td>n</td><td>n</td><td>nun</td><td>nun</td><td onclick = copier(this)>נ</td></tr>
+	<tr><td>s</td><td>s</td><td>samekh</td><td>samekh</td><td onclick = copier(this)>ס</td></tr>
+	<tr><td>a</td><td>a</td><td>ayin</td><td>ayin</td><td onclick = copier(this)>ע</td></tr>
+	<tr><td>f</td><td>p</td><td>pe</td><td>pe</td><td onclick = copier(this)>פ</td></tr>
+	<tr><td>ts</td><td>s</td><td>tsade</td><td>tsade</td><td onclick = copier(this)>צ</td></tr>
+	<tr><td>k</td><td>k</td><td>qof</td><td>qoph</td><td onclick = copier(this)>ק</td></tr>
+	<tr><td>r</td><td>r</td><td>resh</td><td>resh</td><td onclick = copier(this)>ר</td></tr>
+	<tr><td>sh</td><td>sh</td><td>shin</td><td>shin</td><td onclick = copier(this)>ש</td></tr>
+	<tr><td>t</td><td>t</td><td>tav</td><td>taw</td><td onclick = copier(this)>ת</td></tr>
 </table>
 <table class = table-invisible>
 	<tr>
