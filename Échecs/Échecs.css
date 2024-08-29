@@ -6,26 +6,21 @@
 
 
 body {
-	font-size: 275%;
+	font-size: 300%;
 	background-color: #008000;
+	text-align: center;
 }
 
-table {
-	width: 30%;
-	margin: auto;
-}
+table {margin: auto;}
 
-tr {
+td {
 	cursor: pointer;
+	text-shadow: 1px 1px 0px #ffffff;
+	width: 75px;
+	height: 75px;
 }
-
-.blanc {
-	background-color: #ffffff;
-}
-
-.noir {
-	background-color: #000000;
-}
+.td-blanc {background-color: #ffffff;}
+.td-noir {background-color: #000000;}
 
 
 /*===================================================================================================================*/
