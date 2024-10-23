@@ -7,7 +7,6 @@
 * {
 	text-align: center;
 	font-family: garamond;
-	font-size: 125%;
 	color: #ffffff;
 }
 
@@ -24,6 +23,7 @@ body {
 	background-color: #303841;
 	text-shadow: 1px 1px 1px #000000;
 	margin: 2%;
+	font-size: 125%;
 }
 
 button {
