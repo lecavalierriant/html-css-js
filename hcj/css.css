@@ -1,0 +1,10 @@
+.default {cursor: default;}
+.move {cursor: move;}
+.text {cursor: text;}
+.pointer {cursor: pointer;}
+.wait {cursor: wait;}
+.not-allowed {cursor: not-allowed;}
+.help {cursor: help;}
+.col-resize {cursor: col-resize;}
+.se-resize {cursor: se-resize}
+.zoom-in {cursor: zoom-in}
