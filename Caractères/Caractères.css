@@ -46,6 +46,8 @@ iframe {
 input {
 	font-size: 150%;
 	font-family: consolas;
+	position: sticky;
+	top: 1%;
 }
 
 nav {
