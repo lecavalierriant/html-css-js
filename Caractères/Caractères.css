@@ -48,6 +48,7 @@ input {
 	font-family: consolas;
 	position: sticky;
 	top: 1%;
+	background-color: #303841;
 }
 
 nav {
