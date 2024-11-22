@@ -9,6 +9,7 @@ copier = (caractère) => {
 		() => {alert("Caractère « " + caractère.innerHTML + " » copié !");}
 	);
 };
+
 document.addEventListener(
 	"DOMContentLoaded",
 	function () {
@@ -45,6 +46,7 @@ document.addEventListener(
 		);
 	}
 );
+
 function nouvelleLigneStatistiques(classe, occurrences, total) {
 	pourcentage = (occurrences / total) * 100;
 	ligne = tableStatistiques.insertRow();
