@@ -34,4 +34,4 @@
 .w-resize {cursor: w-resize;}
 .zoom-in {cursor: zoom-in;}
 .zoom-out {cursor: zoom-out;}
-.url {color: green; cursor: url("souris2.png"), pointer;}
+.url {color: red; cursor: url("souris3.png"), pointer;}
