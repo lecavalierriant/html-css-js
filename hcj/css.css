@@ -6,6 +6,7 @@
 .not-allowed {cursor: not-allowed;}
 .help {cursor: help;}
 .col-resize {cursor: col-resize;}
-.se-resize {cursor: se-resize}
-.zoom-in {cursor: zoom-in}
-.url {color: blue; cursor: url("souris.png"), auto;}
+.se-resize {cursor: se-resize;}
+.zoom-in {cursor: zoom-in;}
+.grab {cursor: grab;}
+.url {color: green; cursor: url("souris.png"), pointer;}
