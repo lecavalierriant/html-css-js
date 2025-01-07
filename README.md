@@ -6,4 +6,3 @@ Liste des projets en cours :
 
 - Caractères : https://lecavalierriant.github.io/HTML-CSS-JS/Caractères/Caractères.html
 - Web : https://lecavalierriant.github.io/HTML-CSS-JS/Web/html.html
-- hcj : https://lecavalierriant.github.io/HTML-CSS-JS/hcj/html.html
