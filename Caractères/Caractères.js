@@ -13,11 +13,8 @@ copier = (caractère) => {
 document.addEventListener(
 	"DOMContentLoaded",
 	function () {
-		if (document.title == "Alt +") {
-			éléments = document.querySelectorAll("td");
-		} else {
-			éléments = document.querySelectorAll("tr");
-		}
+		if (document.title == "Alt +") {éléments = document.querySelectorAll("td");}
+		else {éléments = document.querySelectorAll("tr");}
 		total = éléments.length;
 		occurrences = {};
 		nombreDeClasses = 0;
