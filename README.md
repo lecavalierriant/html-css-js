@@ -1,6 +1,6 @@
-**HTML — CSS — JS**
+# HTML — CSS — JS
 
-*© 2025 — Le Cavalier Riant*
+*© Le Cavalier Riant*
 
 Liste des projets en cours :
 
