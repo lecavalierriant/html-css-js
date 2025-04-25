@@ -83,13 +83,11 @@ li {
 }
 li:hover {color: #abcdef;}
 
-
 .inutile {background-color: #cc0000;}
 .vide {background-color: #cccccc;}
 .vide:hover {cursor: not-allowed;}
 .utile {background-color: #00cccc}
 .doublon {border: 2px dashed #cccc00;}
-
 
 @media (orientation: landscape) and (min-width: 910px) {
 /*	body {font-size: 100%;}*/
@@ -99,7 +97,6 @@ li:hover {color: #abcdef;}
 /*	body {font-size: 100%;}*/
 /*	#div-contenu {columns: 3;}*/
 }
-
 
 /*===================================================================================================================*/
 /*                                                                                                                   */
