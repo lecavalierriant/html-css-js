@@ -17,7 +17,7 @@ body {
 	background-color: #303841;
 	text-shadow: 1px 1px 1px #000000;
 	margin: 2%;
-	font-size: 125%;
+	font-size: 200%;
 }
 
 button {
@@ -45,11 +45,6 @@ input {
 	background-color: #303841;
 }
 
-nav {
-	text-align: left;
-	font-size: 175%;
-}
-
 table {
 	border: 2px #ffffff solid;
 	width: auto;
@@ -66,17 +61,17 @@ td:hover {
 
 th {padding: 15px;}
 
-li {
-	margin: 1%;
-	transition: ease 0.2s;
-}
-li:hover {color: #abcdef;}
-
 .inutile {background-color: #cc0000;}
 .vide {background-color: #cccccc;}
 .vide:hover {cursor: not-allowed;}
 .utile {background-color: #00cccc}
 .doublon {border: 2px dashed #cccc00;}
 
-@media (orientation: landscape) and (min-width: 910px) {#contenu {columns: 2;}}
-@media (orientation: landscape) and (min-width: 1350px) {#contenu {columns: 3;}}
+@media (orientation: landscape) and (min-width: 910px) {
+	#contenu {columns: 2;}
+	body {font-size: 100%;}
+}
+@media (orientation: landscape) and (min-width: 1350px) {
+	#contenu {columns: 3;}
+	body {font-size: 100%;}
+}
