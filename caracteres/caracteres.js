@@ -26,15 +26,6 @@ document.addEventListener(
 		nouvelleLigneStatistiques("Défaut", total - nombreDeClasses, total);
 		for (classe in occurrences) {nouvelleLigneStatistiques(classe, occurrences[classe], total);}
 		nouvelleLigneStatistiques("Total", total, total);
-		polices.addEventListener(
-			"change", function() {
-				police = polices.value;
-				for (var i = document.querySelectorAll("#table-caractères td").length - 1; i >= 0; i--) {
-					document.querySelectorAll("#table-caractères td")[i].style.fontFamily = police;
-				}
-				input.style.fontFamily = police;
-			}
-		);
 	}
 );
 

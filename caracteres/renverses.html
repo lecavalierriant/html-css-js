@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang = fr>
+<html lang = "fr">
 <head>
 	<title>Renversés</title>
-	<meta charset = utf-8>
-	<link rel = stylesheet href = caracteres.css>
-	<link rel = "shortcut icon" href = caracteres.ico>
-	<script src = caracteres.js></script>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href = "caracteres.css">
+	<link rel = "icon" href = "caracteres.ico">
+	<script src = "caracteres.js"></script>
 	<style>
 		.propre {background-color: #0000cc}
 		.symétrique {background-color: #00cc00}
@@ -13,172 +13,82 @@
 	</style>
 </head>
 <body>
-<iframe src = caracteres.html></iframe>
+<iframe src = "caracteres.html"></iframe>
 
 <h1>Renversés</h1>
 
-Police :
-<select id = polices>
-	<optgroup label = "Avec empattement (serif)">
-		<option value = "Cambria">Cambria</option>
-		<option value = "Constantia">Constantia</option>
-		<option value = "Garamond">Garamond</option>
-		<option value = "Georgia">Georgia</option>
-		<option value = "Lucida Bright">Lucida Bright</option>
-		<option value = "MS Serif">MS Serif</option>
-		<option value = "Century Schoolbook">Century Schoolbook</option>
-		<option value = "Book Antiqua">Book Antiqua</option>
-		<option value = "Rockwell">Rockwell</option>
-		<option value = "Times New Roman">Times New Roman</option>
-	</optgroup>
-	<optgroup label = "Linéales (sans-serif)">
-		<option value = "Arial">Arial</option>
-		<option value = "Calibri">Calibri</option>
-		<option value = "Century Gothic">Century Gothic</option>
-		<option value = "Corbel">Corbel</option>
-		<option value = "Franklin Gothic">Franklin Gothic</option>
-		<option value = "Haettenschweiler">Haettenschweiler</option>
-		<option value = "Helvetica">Helvetica</option>
-		<option value = "Impact">Impact</option>
-		<option value = "Lucida Sans">Lucida Sans</option>
-		<option value = "MS Sans Serif">MS Sans Serif</option>
-		<option value = "Segoe UI">Segoe UI</option>
-		<option value = "Tahoma">Tahoma</option>
-		<option value = "Trebuchet MS">Trebuchet MS</option>
-		<option value = "Verdana">Verdana</option>
-	</optgroup>
-	<optgroup label = "À chasse fixe">
-		<option value = "Consolas">Consolas</option>
-		<option value = "Courier">Courier</option>
-		<option value = "Courier New">Courier New</option>
-		<option value = "Lucida Console">Lucida Console</option>
-		<option value = "Monospace">Monospace</option>
-		<option value = "MS Gothic">MS Gothic</option>
-		<option value = "Ubuntu Mono">Ubuntu Mono</option>
-	</optgroup>
-	<optgroup label = "Manuscrite">
-		<option value = "Comic Sans MS">Comic Sans MS</option>
-		<option value = "Freestyle Script">Freestyle Script</option>
-		<option value = "Lucida Handwriting">Lucida Handwriting</option>
-	</optgroup>
-	<optgroup label = "Non latines">
-		<option value = "SimSun">SimSun</option>
-	</optgroup>
-	<optgroup label = "Dingbats / Caractères des symboles">
-		<option value = "Symbol">Symbol</option>
-		<option value = "Wingdings">Wingdings</option>
-		<option value = "Webdings">Webdings</option>
-	</optgroup>
-	<optgroup label = "Divers">
-		<option value = "Cooper Black">Cooper Black</option>
-		<option value = "Jokerman">Jokerman</option>
-	</optgroup>
-</select>
-
-<br><br>
-
-<div id = div-contenu>
-<table id = table-caractères>
-	<tr><th colspan = 4>Lettre</th></tr>
-	<tr><th>Majuscule</th><th>Renversée</th><th>Minuscule</th><th>Renversée</th></tr>
-	<tr>
-		<th class = propre>A</th><td class = propre onclick = copier(this)>Ɐ</td>
-		<th class = propre>a</th><td class = propre onclick = copier(this)>ɐ</td>
-	</tr><tr>
-		<th></th><td></td>
-		<th class = propre>æ</th><td class = propre onclick = copier(this)>ᴂ</td>
-	</tr><tr>
-		<th class = autre>B</th><td class = autre onclick = copier(this)>𐐒</td>
-		<th class = autre>b</th><td class = autre onclick = copier(this)>q</td>
-	</tr><tr>
-		<th class = autre>C</th><td class = autre onclick = copier(this)>Ↄ</td>
-		<th class = autre>c</th><td class = autre onclick = copier(this)>ɔ</td>
-	</tr><tr>
-		<th class = autre>D</th><td class = autre onclick = copier(this)>ᗡ</td>
-		<th class = autre>d</th><td class = autre onclick = copier(this)>p</td>
-	</tr><tr>
-		<th class = propre>E</th><td class = propre onclick = copier(this)>Ǝ</td>
-		<th class = propre>e</th><td class = propre onclick = copier(this)>ǝ</td>
-	</tr><tr>
-		<th class = propre>F</th><td class = propre onclick = copier(this)>Ⅎ</td>
-		<th class = autre>f</th><td class = autre onclick = copier(this)>ɟ</td>
-	</tr><tr>
-		<th class = propre>G</th><td class = propre onclick = copier(this)>⅁</td>
-		<th class = propre>g</th><td class = propre onclick = copier(this)>ᵷ</td>
-	</tr><tr>
-		<th class = symétrique>H</th><td class = symétrique onclick = copier(this)>H</td>
-		<th class = propre>h</th><td class = propre onclick = copier(this)>ɥ</td>
-	</tr><tr>
-		<th class = symétrique>I</th><td class = symétrique onclick = copier(this)>I</td>
-		<th class = propre>i</th><td class = propre onclick = copier(this)>ᴉ</td>
-	</tr><tr>
-		<th class = autre>J</th><td class = autre onclick = copier(this)>ſ</td>
-		<th class = autre>j</th><td class = autre onclick = copier(this)>ɾ</td>
-	</tr><tr>
-		<th class = propre>K</th><td class = propre onclick = copier(this)>Ʞ</td>
-		<th class = propre>k</th><td class = propre onclick = copier(this)>ʞ</td>
-	</tr><tr>
-		<th class = propre>L</th><td class = propre onclick = copier(this)>Ꞁ</td>
-		<th class = propre>l</th><td class = propre onclick = copier(this)>ꞁ</td>
-	</tr><tr>
-		<th class = propre>M</th><td class = propre onclick = copier(this)>ꟽ</td>
-		<th class = propre>m</th><td class = propre onclick = copier(this)>ɯ</td>
-	</tr><tr>
-		<th class = symétrique>N</th><td class = symétrique onclick = copier(this)>N</td>
-		<th class = autre>n</th><td class = autre onclick = copier(this)>u</td>
-	</tr><tr>
-		<th class = symétrique>O</th><td class = symétrique onclick = copier(this)>O</td>
-		<th class = symétrique>o</th><td class = symétrique onclick = copier(this)>o</td>
-	</tr><tr>
-		<th></th><td></td>
-		<th class = propre>œ</th><td class = propre onclick = copier(this)>ᴔ</td>
-	</tr><tr>
-		<th class = autre>P</th><td class = autre onclick = copier(this)>Ԁ</td>
-		<th class = autre>p</th><td class = autre onclick = copier(this)>d</td>
-	</tr><tr>
-		<th class = autre>Q</th><td class = autre onclick = copier(this)>Ὁ</td>
-		<th class = autre>q</th><td class = autre onclick = copier(this)>b</td>
-	</tr><tr>
-		<th class = propre>R</th><td class = propre onclick = copier(this)>ᴚ</td>
-		<th class = propre>r</th><td class = propre onclick = copier(this)>ɹ</td>
-	</tr><tr>
-		<th class = symétrique>S</th><td class = symétrique onclick = copier(this)>S</td>
-		<th class = symétrique>s</th><td class = symétrique onclick = copier(this)>s</td>
-	</tr><tr>
-		<th class = propre>T</th><td class = propre onclick = copier(this)>Ʇ</td>
-		<th class = propre>t</th><td class = propre onclick = copier(this)>ʇ</td>
-	</tr><tr>
-		<th class = autre>U</th><td class = autre onclick = copier(this)>∩</td>
-		<th class = autre>u</th><td class = autre onclick = copier(this)>n</td>
-	</tr><tr>
-		<th class = propre>V</th><td class = propre onclick = copier(this)>Ʌ</td>
-		<th class = propre>v</th><td class = propre onclick = copier(this)>ʌ</td>
-	</tr><tr>
-		<th class = autre>W</th><td class = autre onclick = copier(this)>M</td>
-		<th class = propre>w</th><td class = propre onclick = copier(this)>ʍ</td>
-	</tr><tr>
-		<th class = symétrique>X</th><td class = symétrique onclick = copier(this)>X</td>
-		<th class = symétrique>x</th><td class = symétrique onclick = copier(this)>x</td>
-	</tr><tr>
-		<th class = propre>Y</th><td class = propre onclick = copier(this)>⅄</td>
-		<th class = propre>y</th><td class = propre onclick = copier(this)>ʎ</td>
-	</tr><tr>
-		<th class = symétrique>Z</th><td class = symétrique onclick = copier(this)>Z</td>
-		<th class = symétrique>z</th><td class = symétrique onclick = copier(this)>z</td>
-	</tr>
+<div id = "contenu">
+<table id = "table-caractères">
+	<tr><th colspan = 2>Caractère</th></tr>
+	<tr><th>Majuscule</th><th>Renversé</th></tr>
+	<tr class = "propre"><th>A</th><td onclick = "copier(this)">Ɐ</td></tr>
+	<tr class = "autre"><th>B</th><td onclick = "copier(this)">𐐒</td></tr>
+	<tr class = "autre"><th>C</th><td onclick = "copier(this)">Ↄ</td></tr>
+	<tr class = "autre"><th>D</th><td onclick = "copier(this)">ᗡ</td></tr>
+	<tr class = "propre"><th>E</th><td onclick = "copier(this)">Ǝ</td></tr>
+	<tr class = "propre"><th>F</th><td onclick = "copier(this)">Ⅎ</td></tr>
+	<tr class = "propre"><th>G</th><td onclick = "copier(this)">⅁</td></tr>
+	<tr class = "symétrique"><th>H</th><td onclick = "copier(this)">H</td></tr>
+	<tr class = "symétrique"><th>I</th><td onclick = "copier(this)">I</td></tr>
+	<tr class = "autre"><th>J</th><td onclick = "copier(this)">ſ</td></tr>
+	<tr class = "propre"><th>K</th><td onclick = "copier(this)">Ʞ</td></tr>
+	<tr class = "propre"><th>L</th><td onclick = "copier(this)">Ꞁ</td></tr>
+	<tr class = "propre"><th>M</th><td onclick = "copier(this)">ꟽ</td></tr>
+	<tr class = "symétrique"><th>N</th><td onclick = "copier(this)">N</td></tr>
+	<tr class = "symétrique"><th>O</th><td onclick = "copier(this)">O</td></tr>
+	<tr class = "autre"><th>P</th><td onclick = "copier(this)">Ԁ</td></tr>
+	<tr class = "autre"><th>Q</th><td onclick = "copier(this)">Ὁ</td></tr>
+	<tr class = "propre"><th>R</th><td onclick = "copier(this)">ᴚ</td></tr>
+	<tr class = "symétrique"><th>S</th><td onclick = "copier(this)">S</td></tr>
+	<tr class = "propre"><th>T</th><td onclick = "copier(this)">Ʇ</td></tr>
+	<tr class = "autre"><th>U</th><td onclick = "copier(this)">∩</td></tr>
+	<tr class = "propre"><th>V</th><td onclick = "copier(this)">Ʌ</td></tr>
+	<tr class = "autre"><th>W</th><td onclick = "copier(this)">M</td></tr>
+	<tr class = "symétrique"><th>X</th><td onclick = "copier(this)">X</td></tr>
+	<tr class = "propre"><th>Y</th><td onclick = "copier(this)">⅄</td></tr>
+	<tr class = "symétrique"><th>Z</th><td onclick = "copier(this)">Z</td></tr>
+	<tr><th>Minuscule</th><th>Renversé</th></tr>
+	<tr class = "propre"><th>a</th><td onclick = "copier(this)">ɐ</td></tr>
+	<tr class = "propre"><th>æ</th><td onclick = "copier(this)">ᴂ</td></tr>
+	<tr class = "autre"><th>b</th><td onclick = "copier(this)">q</td></tr>
+	<tr class = "autre"><th>c</th><td onclick = "copier(this)">ɔ</td></tr>
+	<tr class = "autre"><th>d</th><td onclick = "copier(this)">p</td></tr>
+	<tr class = "propre"><th>e</th><td onclick = "copier(this)">ǝ</td></tr>
+	<tr class = "autre"><th>f</th><td onclick = "copier(this)">ɟ</td></tr>
+	<tr class = "propre"><th>g</th><td onclick = "copier(this)">ᵷ</td></tr>
+	<tr class = "propre"><th>h</th><td onclick = "copier(this)">ɥ</td></tr>
+	<tr class = "propre"><th>i</th><td onclick = "copier(this)">ᴉ</td></tr>
+	<tr class = "autre"><th>j</th><td onclick = "copier(this)">ɾ</td></tr>
+	<tr class = "propre"><th>k</th><td onclick = "copier(this)">ʞ</td></tr>
+	<tr class = "propre"><th>l</th><td onclick = "copier(this)">ꞁ</td></tr>
+	<tr class = "propre"><th>m</th><td onclick = "copier(this)">ɯ</td></tr>
+	<tr class = "autre"><th>n</th><td onclick = "copier(this)">u</td></tr>
+	<tr class = "symétrique"><th>o</th><td onclick = "copier(this)">o</td></tr>
+	<tr class = "propre"><th>œ</th><td onclick = "copier(this)">ᴔ</td></tr>
+	<tr class = "autre"><th>p</th><td onclick = "copier(this)">d</td></tr>
+	<tr class = "autre"><th>q</th><td onclick = "copier(this)">b</td></tr>
+	<tr class = "propre"><th>r</th><td onclick = "copier(this)">ɹ</td></tr>
+	<tr class = "symétrique"><th>s</th><td onclick = "copier(this)">s</td></tr>
+	<tr class = "propre"><th>t</th><td onclick = "copier(this)">ʇ</td></tr>
+	<tr class = "autre"><th>u</th><td onclick = "copier(this)">n</td></tr>
+	<tr class = "propre"><th>v</th><td onclick = "copier(this)">ʌ</td></tr>
+	<tr class = "propre"><th>w</th><td onclick = "copier(this)">ʍ</td></tr>
+	<tr class = "symétrique"><th>x</th><td onclick = "copier(this)">x</td></tr>
+	<tr class = "propre"><th>y</th><td onclick = "copier(this)">ʎ</td></tr>
+	<tr class = "symétrique"><th>z</th><td onclick = "copier(this)">z</td></tr>
 	<tr><th>Chiffre</th><th>Renversé</th></tr>
-	<tr class = propre><th colspan = 2>2</th><td colspan = 2 onclick = copier(this)>↊</td></tr>
-	<tr class = propre><th colspan = 2>3</th><td colspan = 2 onclick = copier(this)>↋</td></tr>
-	<tr><th>Ponctuation</th><th>Renversée</th></tr>
-	<tr class = propre><th colspan = 2>,</th><td colspan = 2 onclick = copier(this)>⸲</td></tr>
-	<tr class = propre><th colspan = 2>;</th><td colspan = 2 onclick = copier(this)>⸵</td></tr>
-	<tr class = propre><th colspan = 2>&</th><td colspan = 2 onclick = copier(this)>⅋</td></tr>
-	<tr class = propre><th colspan = 2>!</th><td colspan = 2 onclick = copier(this)>¡</td></tr>
+	<tr class = "propre"><th>2</th><td onclick = "copier(this)">↊</td></tr>
+	<tr class = "propre"><th>3</th><td onclick = "copier(this)">↋</td></tr>
+	<tr><th>Ponctuation</th><th>Renversé</th></tr>
+	<tr class = "propre"><th>,</th><td onclick = "copier(this)">⸲</td></tr>
+	<tr class = "propre"><th>;</th><td onclick = "copier(this)">⸵</td></tr>
+	<tr class = "propre"><th>&</th><td onclick = "copier(this)">⅋</td></tr>
+	<tr class = "propre"><th>!</th><td onclick = "copier(this)">¡</td></tr>
 </table>
 </div>
 
 <h2>Statistiques</h2>
-<table id = table-statistiques></table>
+<table id = "table-statistiques"></table>
 
 </body>
 </html>

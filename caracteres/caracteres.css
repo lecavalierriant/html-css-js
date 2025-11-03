@@ -26,7 +26,7 @@ button {
 	font-weight: bold;
 }
 
-#div-contenu {
+#contenu {
 	border: 4px #ffffff solid;
 	padding: 1%;
 }
@@ -55,9 +55,6 @@ table {
 	width: auto;
 	margin: auto;
 }
-.table-invisible {
-	border: 0;
-}
 
 td {transition: ease 0.2s;}
 td:hover {
@@ -67,9 +64,7 @@ td:hover {
 	text-shadow: 0 0 0;
 }
 
-th {
-	padding: 15px;
-}
+th {padding: 15px;}
 
 li {
 	margin: 1%;
@@ -83,11 +78,5 @@ li:hover {color: #abcdef;}
 .utile {background-color: #00cccc}
 .doublon {border: 2px dashed #cccc00;}
 
-@media (orientation: landscape) and (min-width: 910px) {
-/*	body {font-size: 100%;}*/
-/*	#div-contenu {columns: 2;}*/
-}
-@media (orientation: landscape) and (min-width: 1350px) {
-/*	body {font-size: 100%;}*/
-/*	#div-contenu {columns: 3;}*/
-}
+@media (orientation: landscape) and (min-width: 910px) {#contenu {columns: 2;}}
+@media (orientation: landscape) and (min-width: 1350px) {#contenu {columns: 3;}}
