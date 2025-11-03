@@ -74,4 +74,5 @@ th {padding: 15px;}
 @media (orientation: landscape) and (min-width: 1350px) {
 	#contenu {columns: 3;}
 	body {font-size: 100%;}
+	iframe {aspect-ratio: 2.5;}
 }
