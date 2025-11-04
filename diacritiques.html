@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang = "fr">
+<head>
+	<title>Diacritiques</title>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href = "caracteres.css">
+	<link rel = "icon" href = "caracteres.ico">
+	<script src = "caracteres.js"></script>
+</head>
+<body>
+<iframe src = "caracteres.html"></iframe>
+
+<h1>Diacritiques</h1>
+
+<div id = "contenu">
+<table>
+	<tr class = "français"><td>[ 0 ]</td><td><span class = "aléatoire">A</span>&#x300;</td><td>Grave</td></tr>
+	<tr class = "français"><td>[ 1 ]</td><td><span class = "aléatoire">A</span>&#x301;</td><td>Aigu</td></tr>
+	<tr class = "français"><td>[ 2 ]</td><td><span class = "aléatoire">A</span>&#x302;</td><td>Circonflexe</td></tr>
+	<tr class = "espagnol"><td>[ 3 ]</td><td><span class = "aléatoire">A</span>&#x303;</td><td>Tilde</td></tr>
+	<tr class = ""><td>[ 4 ]</td><td><span class = "aléatoire">A</span>&#x304;</td><td>Macron</td></tr>
+	<tr class = ""><td>[ 5 ]</td><td><span class = "aléatoire">A</span>&#x305;</td><td>Tiret haut</td></tr>
+	<tr class = "russe"><td>[ 6 ]</td><td><span class = "aléatoire">A</span>&#x306;</td><td>Brève</td></tr>
+	<tr class = ""><td>[ 7 ]</td><td><span class = "aléatoire">A</span>&#x307;</td><td>Point en chef</td></tr>
+	<tr class = "français russe"><td>[ 8 ]</td><td><span class = "aléatoire">A</span>&#x308;</td><td>Tréma</td></tr>
+	<tr class = ""><td>[ A ]</td><td><span class = "aléatoire">A</span>&#x30A;</td><td>Rond en chef</td></tr>
+	<tr class = "tchèque"><td>[ C ]</td><td><span class = "aléatoire">A</span>&#x30C;</td><td>Caron</td></tr>
+	<tr class = "français"><td>[ 27 ]</td><td><span class = "aléatoire">A</span>&#x327;</td><td>Cédille</td></tr>
+	<tr class = ""><td>[ 32 ]</td><td><span class = "aléatoire">A</span>&#x332;</td><td>Trait souscrit</td></tr>
+	<tr class = "grec"><td>[ 42 ]</td><td><span class = "aléatoire">A</span>&#x342;</td><td>Circonflexe grec</td></tr>
+</table>
+
+<p>Entrez un caractère et un code :</p>
+<input type = "text" placeholder = "Caractère et code" id = "entrée">
+<button onclick = "diac()">Fusionner</button><br>
+Cliquer pour copier.
+<button onclick = "copier(this)" id = "sortie"></button>
+</div>
+
+<script>
+	diacritiques = {
+		0x0:	"\u0300", // ̀ 
+		0x1:	"\u0301", // ́ 
+		0x2:	"\u0302", // ̂ 
+		0x3:	"\u0303", // ̃ 
+		0x4:	"\u0304", // ̄ 
+		0x5:	"\u0305", // ̅ 
+		0x6:	"\u0306", // ̆ 
+		0x7:	"\u0307", // ̇ 
+		0x8:	"\u0308", // ̈ 
+		0xA:	"\u030A", // ̊ 
+		0xC:	"\u030C", // ̌ 
+		0x27:	"\u0327", // ̧ 
+		0x32:	"\u0332", // ̲ 
+		0x42:	"\u0342", // ͂ 
+	};
+	function diac() {
+		[caractère, code] = entrée.value.split(" ");
+		sortie.innerHTML = caractère + (diacritiques[parseInt(code, 16)] || "");
+		// navigator.clipboard.writeText(caractère + (diacritiques[parseInt(code, 16)] || ""));
+	}
+</script>
+
+<h2>Statistiques</h2>
+<table id = "statistiques"></table>
+
+</body>
+</html>
