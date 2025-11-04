@@ -1,3 +1,3 @@
-# Caractères
+# HTML, CSS & JS
 
 *© 𝔏𝔢 ℭ𝔞𝔳𝔞𝔩𝔦𝔢𝔯 ℜ𝔦𝔞𝔫𝔱*
