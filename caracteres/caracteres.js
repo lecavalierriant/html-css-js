@@ -7,8 +7,7 @@ copier = (caractère) => {
 document.addEventListener(
 	"DOMContentLoaded",
 	function () {
-		if (document.title == "Alt +") {éléments = document.querySelectorAll("td");}
-		else {éléments = document.querySelectorAll("tr");}
+		éléments = document.querySelectorAll("tr");
 		total = éléments.length;
 		occurrences = {};
 		nombreDeClasses = 0;
@@ -21,8 +20,7 @@ document.addEventListener(
 				}
 			}
 		);
-		tableStatistiques = document.getElementById("table-statistiques");
-		tableStatistiques.insertRow().insertCell(0).outerHTML = "<th>Classe</th><th>Occurrences</th><th>Proportion</th>";
+		statistiques.insertRow().insertCell(0).outerHTML = "<th>Classe</th><th>Occurrences</th><th>Proportion</th>";
 		nouvelleLigneStatistiques("Défaut", total - nombreDeClasses, total);
 		for (classe in occurrences) {nouvelleLigneStatistiques(classe, occurrences[classe], total);}
 		nouvelleLigneStatistiques("Total", total, total);
@@ -31,7 +29,7 @@ document.addEventListener(
 
 function nouvelleLigneStatistiques(classe, occurrences, total) {
 	pourcentage = (occurrences / total) * 100;
-	ligne = tableStatistiques.insertRow();
+	ligne = statistiques.insertRow();
 	ligne.insertCell(0).outerHTML = "<td class = '" + classe + "'>" + classe + "</td>";
 	ligne.insertCell(1).textContent = occurrences;
 	ligne.insertCell(2).textContent = pourcentage.toFixed(1).replace(".", ",") + " %";
