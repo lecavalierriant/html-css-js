@@ -15,7 +15,7 @@ document.addEventListener(
 			function (élément) {
 				classe = élément.getAttribute("class");
 				if (classe) {
-					if (!occurrences[classe]) {occurrences[classe] = 1;} else {occurrences[classe]++;}
+					occurrences[classe] = (occurrences[classe] || 0) + 1;
 					nombreDeClasses++;
 				}
 			}
@@ -24,6 +24,8 @@ document.addEventListener(
 		nouvelleLigneStatistiques("Défaut", total - nombreDeClasses, total);
 		for (classe in occurrences) {nouvelleLigneStatistiques(classe, occurrences[classe], total);}
 		nouvelleLigneStatistiques("Total", total, total);
+		lettres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφχψωАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзиклмнопрстуфхцчшщъыьэюя";
+		document.querySelectorAll(".aléatoire").forEach(function (aléatoire) {aléatoire.innerText = lettres[Math.floor(Math.random() * lettres.length)];})
 	}
 );
 
